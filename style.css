@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@200&family=Bebas+Neue&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@200&family=Bebas+Neue&family=Kaushan+Script&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3:"Sriracha", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+
+html, body{
+    font-family: var(--fonte1);
+    min-height: 100vh;
+}
+
+:root{
+    --h1: #D582B6 ;
+    --text-color: #544039;
+    --bg-color: #FFEAD9;
+    --header-color: #6c6c75, #53535a, #404044;
+    --color-01: #53535a;
+    --main-text: "Afacad Flux", sans-serif;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3:"Sriracha", serif;
+}
+
+/*-------Cabeçalho-------*/
+.cabeçalio{
+    background-color:#FFEAD9;
+    display: flex;
+}
+
+nav{
+    position: relative;
+    top: 5rem;
+}
+.logo{
+    cursor: default;
+    width: 52%;
+    margin-left: -3rem;
+    top: 1rem;
+    position: relative;
+}
+section{
+    padding: 10px 10px;
+}
+
+h1{
+    color: #D582B6;
+    font-size: 5rem;
+    font-family: "Afacad Flux", serif;
+    text-align: center;
+}
+.casa-conteudo p{
+    width: 80%;
+    color: #544039;
+    font-size: 40px;
+    font-family: "Afacad Flux", serif;
+}
+.casa img{
+    width: 90%;
+}
+
+
+
+
+

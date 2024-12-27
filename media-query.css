@@ -1,0 +1,33 @@
+
+@charset "UTF-8";
+
+
+
+
+@media screen and (min-width: 840px) and  (max-width: 1400px){
+    .logo{
+        cursor: default;
+        margin-top: -4px;
+        width: 28%;
+        margin-left: -3rem;
+    }
+}
+
+
+@media (orientation: landscape){
+    .logo{
+        cursor: default;
+        margin-top: -4px;
+        width: 29%;
+        margin-left: -3rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 830px){
+    .logo{
+        cursor: default;
+        margin-top: -4px;
+        width: 35%;
+        margin-left: -3rem;
+    }
+}
