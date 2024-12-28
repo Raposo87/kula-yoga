@@ -31,18 +31,19 @@ html, body{
     --h2: #D582B6;
     --text-color: #544039;
     --bg-color: #FFEAD9;
-    --header-color: #6c6c75, #53535a, #404044;
-    --color-01: #53535a;
-    --main-text: "Afacad Flux", sans-serif;
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: "Passion One", sans-serif;
-    --fonte3:"Sriracha", serif;
+    --header-color: #FCAD9E;
+    --midia-social: #D582B6;
+    --h1: "Afacad Flux", serif;
+    --p: "Playwrite CO Guides", serif;
 }
 
 /*-------Cabeçalho-------*/
 .cabeçalio{
+    position: fixed;
+    top: 0;
     background-color:#FFEAD9;
     display: flex;
+    z-index: 5;
 }
 
 nav{
@@ -56,13 +57,19 @@ nav{
     top: 1rem;
     position: relative;
 }
+
 section{
-    padding: 10px 10px;
+    margin-top: 10px;
+    padding: 20px;
+    min-height: 100vh;
+}
+.casa{
+    margin-top: 40%;
 }
 
 h1{
     color: #D582B6;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Afacad Flux", serif;
     text-align: center;
 }
@@ -72,8 +79,26 @@ p{
     font-size: 40px;
     font-family: "Playwrite CO Guides", serif;
 }
+.social-icons{
+    position: relative;
+    left: 40%;
+    margin-right: 51%;
+    bottom: 40px;
+}
+.bx{
+    border-radius: 30%;
+    box-shadow: 2px 2px 3px var(--text-color);
+}
+.social-icons a{
+    color: var(--midia-social);
+    font-size: 30px;
+    padding: 9px;
+    
+    
+}
 .casa img{
-    width: 90%;
+    width: 100%;
+    padding: 10px;
 }
 
 .serviço{
@@ -84,7 +109,9 @@ h2{
     font-family: "Afacad Flux", serif;
     font-size: 50px;
 }
-
+.serviço-conteudo img{
+    width: 100%;
+}
 
 
 
