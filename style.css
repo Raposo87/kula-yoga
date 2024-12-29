@@ -37,34 +37,48 @@ html, body{
     --p: "Playwrite CO Guides", serif;
 }
 
-/*-------Cabeçalho-------*/
-.cabeçalio{
-    position: fixed;
+header{
     top: 0;
     background-color:#FFEAD9;
     display: flex;
     z-index: 5;
+    justify-content: space-between;
+}
+.cabeçalio{
+    display: flex;
 }
 
 nav{
     position: relative;
     top: 5rem;
 }
+nav a{
+    color: var(--text-color);
+    font-family: var(--p);
+    padding: 3px;
+    font-size: 20px;
+}
 .logo{
+    position: relative;
     cursor: default;
     width: 52%;
     margin-left: -3rem;
     top: 1rem;
-    position: relative;
+    
 }
 
 section{
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     min-height: 100vh;
+    
 }
 .casa{
-    margin-top: 40%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url('https://i.pinimg.com/474x/83/85/41/838541830510054f0e324ee811a6f717.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 5%;
 }
 
 h1{
@@ -102,8 +116,12 @@ p{
 }
 
 .serviço{
+    
     display: flex;
+    background-color: #ffead979;
+    margin-top: -30%;
 }
+
 h2{
     color: var(--h2);
     font-family: "Afacad Flux", serif;
@@ -113,6 +131,11 @@ h2{
     width: 100%;
 }
 
+.conteudo1{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 
 
