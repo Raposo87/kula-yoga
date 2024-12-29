@@ -28,9 +28,9 @@ html, body{
 
 :root{
     --h1: #362d2d ;
-    --h2: #353334;
+    --h2: #362d2d;
     --text-color: #544039;
-    --bg-color: #FFEAD9;
+    --bg-color: #FAF4DE;
     --header-color: #8f5347;
     --midia-social: #bd6340;
     --h1: "Afacad Flux", serif;
@@ -39,7 +39,7 @@ html, body{
 
 header{
     top: 0;
-    background-color:#FFEAD9;
+    background-color:var(--bg-color);
     display: flex;
     z-index: 5;
     justify-content: space-between;
@@ -116,7 +116,6 @@ p{
 }
 
 .serviço{
-    
     display: flex;
     background-color: #ffead979;
     margin-top: -30%;
@@ -136,6 +135,8 @@ h2{
     background-size: cover;
     background-position: center;
 }
+.caixa-conteuto1{
 
+}
 
 
