@@ -27,12 +27,12 @@ html, body{
 }
 
 :root{
-    --h1: #D582B6 ;
-    --h2: #D582B6;
+    --h1: #362d2d ;
+    --h2: #353334;
     --text-color: #544039;
     --bg-color: #FFEAD9;
-    --header-color: #FCAD9E;
-    --midia-social: #D582B6;
+    --header-color: #8f5347;
+    --midia-social: #bd6340;
     --h1: "Afacad Flux", serif;
     --p: "Playwrite CO Guides", serif;
 }
@@ -82,7 +82,7 @@ section{
 }
 
 h1{
-    color: #D582B6;
+    color: var(--h1);
     font-size: 4rem;
     font-family: "Afacad Flux", serif;
     text-align: center;
