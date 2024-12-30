@@ -27,7 +27,7 @@ html, body{
 }
 
 :root{
-    --h1: #362d2d ;
+    --h1: #3a2f2fd5 ;
     --h2: #362d2d;
     --text-color: #544039;
     --bg-color: #FAF4DE;
@@ -89,7 +89,7 @@ h1{
 }
 p{
     width: 80%;
-    color: #544039;
+    color: #da3a00a2;
     font-size: 40px;
     font-family: "Playwrite CO Guides", serif;
 }
@@ -136,7 +136,7 @@ h2{
     background-position: center;
 }
 .caixa-conteuto1{
-
+    background-color: #ffead979;
 }
 
 
