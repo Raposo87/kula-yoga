@@ -71,6 +71,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 8vh;
+    z-index: 1;
 }
 
 .nav-list{
@@ -134,17 +135,6 @@ nav{
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .logo{
     position: relative;
