@@ -1,9 +1,5 @@
 
 
-
-
-
-
 const mobileMenu = document.querySelector('.mobile-menu');
 const navList = document.querySelector('.nav-list');
 const sections = document.querySelectorAll('section');
