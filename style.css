@@ -45,18 +45,6 @@ header{
     height: 120px;
     background-color:var(--bg-color);
 }
-/*
-nav{
-    position: relative;
-    top: -8rem;
-    margin-left: 8rem;
-}
-nav a{
-    color: var(--text-color);
-    font-family: var(--p);
-    padding: 3px;
-    font-size: 20px;
-}*/
 a{
     color: var(--h1);
     text-decoration: none;
@@ -152,7 +140,6 @@ section{
     
 }
 .casa{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url('https://i.pinimg.com/474x/83/85/41/838541830510054f0e324ee811a6f717.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -162,6 +149,11 @@ h1{
     font-size: 4rem;
     font-family: "Afacad Flux", serif;
     text-align: center;
+}
+h2{
+    color: var(--h2);
+    font-family: "Afacad Flux", serif;
+    font-size: 50px;
 }
 p{
     width: 80%;
@@ -192,25 +184,61 @@ p{
     top: -22px;
 }
 
-.serviço{
-    display: flex;
-    background-color: #ffead979;
-    margin-top: -20%;
-}
-
-h2{
-    color: var(--h2);
-    font-family: "Afacad Flux", serif;
-    font-size: 50px;
-}
-.serviço-conteudo img{
-    width: 100%;
-}
-
-.conteudo1{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
+.pratica{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.836)),url('https://i.pinimg.com/474x/83/85/41/838541830510054f0e324ee811a6f717.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+}
+
+.pratica h2{
+    text-align: center;
+    margin-top: -6rem;
+    margin-bottom: 10px;
+}
+.pratica p{
+    font-size: 18px;
+    width: 105%;
+    margin-bottom: 20px;
+}
+.btn-custom {
+    /* Variáveis para cores - altere conforme desejado */
+    --primary-color: var(--hover-bg); /* Cor principal (vermelho neste exemplo) */
+    --hover-bg: #6d1f00; /* Cor de fundo ao passar o mouse */
+    --hover-text: #fff; /* Cor do texto ao passar o mouse */
+    
+    /* Estilos do botão */
+    padding: 8px 8px;
+    font-size: 16px;
+    width: 100px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    color: var(--hover-text);
+    background-color: var(--midia-social);
+  }
+  
+  /* Efeito ao clicar */
+  .btn-custom:active {
+    transform: scale(0.98);
+  }
+  .pratica .btn-custom{
+   margin-left: 35%;
+  }
+
+
+
+
+.conteudo1{
+    background-color: #ffead979;
+   
 }
 .caixa-conteudo1 img{
         width: 100%;
@@ -219,8 +247,10 @@ h2{
 
 
 .conteudo2{
-    display: flex;
-    background-color: #ffead979;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.795), rgba(255, 255, 255, 0.795)),url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
 .caixa-conteudo2 img{
     width: 100%;
@@ -235,7 +265,5 @@ h2{
 }
 
 .quemSomos{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url('https://i.pinimg.com/736x/22/3c/f5/223cf57fff736c4feec029f2105371ed.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #ffead979;
 }
