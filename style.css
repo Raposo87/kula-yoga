@@ -198,7 +198,7 @@ p{
 }
 .pratica p{
     font-size: 18px;
-    width: 105%;
+    width: 100%;
     margin-bottom: 20px;
 }
 .btn-custom {
@@ -239,11 +239,77 @@ p{
 .nosso-espaço{
     background-color: #ffead979;
 }
+.nosso-espaço p{
+    font-size: 30px;
+    width: 100%;
+}
+.carrossel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+.carrossel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel-img {
+    width: 100%;
+    display: none;
+    border-radius: 8px;
+}
+
+.carrossel-img.active {
+    display: block;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carrossel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
 .nosso-espaço img{
         width: 100%;
         padding: 10px;
 }
+
+
+
 
 
 .valores{

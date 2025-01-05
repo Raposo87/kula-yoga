@@ -50,3 +50,45 @@ mobileMenu.addEventListener('click', (e) => {
 
 //--------------Botão ------------//
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carrossel-img');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slides.length;
+
+    // Função para mostrar um slide específico
+    function showSlide(n) {
+        // Remove classes ativas atuais
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        
+        // Atualiza o índice do slide atual
+        currentSlide = (n + totalSlides) % totalSlides;
+        
+        // Adiciona classes ativas aos novos elementos
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    // Event listeners para os botões
+    document.querySelector('.prev').addEventListener('click', () => {
+        showSlide(currentSlide - 1);
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+        showSlide(currentSlide + 1);
+    });
+
+    // Event listeners para os dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+        });
+    });
+
+    // Opcional: Navegação automática
+    setInterval(() => {
+        showSlide(currentSlide + 1);
+    }, 5000); // Muda a cada 5 segundos
+});
