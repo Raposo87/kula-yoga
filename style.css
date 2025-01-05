@@ -164,6 +164,7 @@ p{
 .social-icons{
     position: relative;
     left: 60%;
+    margin-right: 51%;
     bottom: 40px;
 }
 .social-icons .bx{
