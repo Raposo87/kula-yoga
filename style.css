@@ -236,29 +236,11 @@ p{
 
 
 
-.professoras{
+.nosso-espaço{
     background-color: #ffead979;
 }
-.voltar-topo {
-    position: fixed;
-    right: 10px;
-    bottom: 30px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    z-index: 999;
-}
 
-.voltar-topo i {
-    font-size: 40px;
-    color: var(--midia-social); 
-}
-
-.caixa-professoras img{
+.nosso-espaço img{
         width: 100%;
         padding: 10px;
 }
@@ -285,3 +267,28 @@ p{
 .quemSomos{
     background-color: #ffead979;
 }
+
+
+.voltar-topo {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.voltar-topo i {
+    font-size: 40px;
+    color: var(--midia-social); 
+}
+
+
+.foolter{
+}
+
