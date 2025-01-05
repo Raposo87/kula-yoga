@@ -163,8 +163,7 @@ p{
 }
 .social-icons{
     position: relative;
-    left: 40%;
-    margin-right: 51%;
+    left: 60%;
     bottom: 40px;
 }
 .social-icons .bx{
@@ -193,7 +192,7 @@ p{
 
 .pratica h2{
     text-align: center;
-    margin-top: -5rem;
+    margin-top: -3rem;
     margin-bottom: 10px;
 }
 .pratica p{
