@@ -42,7 +42,7 @@ html, body{
 
 header{
     top: 0;
-    height: 120px;
+    height: 82px;
     background-color:var(--bg-color);
 }
 a{
@@ -54,12 +54,22 @@ a{
 a:hover{
     opacity: 0,7;
 }
+.cabeçalio{
+    height: 15%;
+    position: fixed;
+    background: var(--bg-color);
+    z-index: 999;
+}
+.logo{
+    cursor: default;
+    width: 43%;
+    margin-left: -2rem;
+    top: -25px;
+    margin-top: -8%;
+}
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8vh;
-    z-index: 1;
+    margin-left: 96%;
+    margin-top: -33%;
 }
 
 .nav-list{
@@ -124,13 +134,6 @@ nav{
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.logo{
-    position: relative;
-    cursor: default;
-    width: 43%;
-    margin-left: -2rem;
-    top: 28px;
-}
 
 section{
     display: flex;

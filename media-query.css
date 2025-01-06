@@ -5,6 +5,10 @@
 
 
 @media screen and (min-width: 840px) and  (max-width: 1400px){
+    section{
+        margin: 0 auto;
+        width: 80%;
+    }
     .logo{
         cursor: default;
         margin-top: -4px;
