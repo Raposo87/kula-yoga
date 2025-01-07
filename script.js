@@ -94,3 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentSlide + 1);
     }, 5000); // Muda a cada 5 segundos
 });
+
+
+//------ Alerta------//
