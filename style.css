@@ -360,12 +360,25 @@ p{
 
 
 footer{
+    text-align: center;
     background: #6d1f00;
     height: 300px;
+}
+.footer-caixa{
+    position: relative;
+    top: -15%;
+    gap: 5px;
 }
 .logo-footer{
     cursor: default;
     width: 30%;
-    margin-left: -1rem;
+    margin-left: -18rem;
     margin-top: -4%;
+}
+footer p{
+    margin-left: 10%;
+    font-size: 18px;
+}
+footer i{
+    font-size: 25px;
 }
