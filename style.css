@@ -191,9 +191,10 @@ p{
 }
 
 .pratica{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.904)),url('https://i.pinimg.com/474x/83/85/41/838541830510054f0e324ee811a6f717.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.792), rgba(255, 255, 255, 0.791)),url('https://i.pinimg.com/474x/83/85/41/838541830510054f0e324ee811a6f717.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
 }
 
@@ -203,6 +204,7 @@ p{
     margin-bottom: 10px;
 }
 .pratica p{
+    color: var(--header-color);
     font-size: 18px;
     width: 100%;
     margin-bottom: 20px;
