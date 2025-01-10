@@ -361,7 +361,7 @@ p{
 
 footer{
     text-align: center;
-    background: #6d1f00;
+    background: var(--h2);
     height: 300px;
 }
 .footer-caixa{
@@ -375,10 +375,15 @@ footer{
     margin-left: -18rem;
     margin-top: -4%;
 }
+footer h3{
+    font-size: 22px;
+}
 footer p{
+    color: var(--midia-social);
     margin-left: 10%;
     font-size: 18px;
 }
 footer i{
-    font-size: 25px;
+    color: var(--midia-social);
+    font-size: 20px;
 }
