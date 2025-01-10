@@ -330,8 +330,19 @@ p{
 .professoras{
     background-color: #ffead979;
 }
-
-
+.professoras-caixa{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.professoras-caixa img{
+    width: 9rem;
+    margin-top: 30px;
+}
+.professoras-caixa p{
+    font-size: 17px;
+    
+}
 .voltar-topo {
     position: fixed;
     right: 10px;
