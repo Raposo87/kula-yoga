@@ -26,16 +26,16 @@
 @media (orientation: landscape){
     .logo{
         cursor: default;
-        margin-top: -40px;
+        margin-top: -15px;
         width: 14%;
-        margin-left: 0rem;
+        margin-left: 1rem;
     }
     nav{
         margin-left: 90%;
-        margin-top: -10%;
+        margin-top: -12%;
     }
     .cabeçalio {
-        height: 19%;
+        height: 17%;
         width: 100%;
         position: fixed;
         background: var(--bg-color);
