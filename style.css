@@ -338,10 +338,11 @@ p{
     background-color: #ffead979;
 }
 .professoras-caixa{
-    display: flex;
-    justify-content: space-between;
+    
 }
 .professoras-caixa img{
+    border: solid var(--header-color);
+    border-radius: 50%;
     position: relative;
     left: -5px;
     width: 11rem;
