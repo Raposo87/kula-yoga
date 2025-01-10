@@ -331,9 +331,9 @@ p{
     background-color: #ffead979;
 }
 .professoras-caixa{
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 20px;
 }
 .professoras-caixa img{
     width: 9rem;
@@ -341,7 +341,6 @@ p{
 }
 .professoras-caixa p{
     font-size: 17px;
-    
 }
 .voltar-topo {
     position: fixed;
@@ -371,7 +370,6 @@ footer{
 .footer-caixa{
     position: relative;
     top: -15%;
-    gap: 5px;
 }
 .logo-footer{
     cursor: default;
@@ -380,7 +378,8 @@ footer{
     margin-top: -4%;
 }
 footer h3{
-    font-size: 22px;
+    font-size: 23px;
+    padding: 10px;
 }
 footer p{
     color: var(--midia-social);
