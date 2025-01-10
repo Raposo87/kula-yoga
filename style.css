@@ -192,7 +192,6 @@ p{
 
 .pratica{
     background-image: linear-gradient(rgba(255, 255, 255, 0.792), rgba(255, 255, 255, 0.791)),url('https://i.pinimg.com/474x/83/85/41/838541830510054f0e324ee811a6f717.jpg');
-    
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
@@ -311,18 +310,18 @@ p{
     background-color: #717171;
 }
 .nosso-espaço img{
-        width: 100%;
-        padding: 10px;
+    width: 100%;
+    padding: 10px;
 }
 
 .valores{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.959), rgba(255, 255, 255, 0.904)),url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
-    background-size: cover;
-    background-position: center;
-
+    background-image: linear-gradient(rgba(255, 255, 255, 0.832), rgba(255, 255, 255, 0.793)),url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
 }
 .valores p{
-    font-size: 20px;
+    font-size: 25px;
     width: 100%;
     margin-bottom: 20px;
     color: #883d1f;
