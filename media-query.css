@@ -23,20 +23,37 @@
 @media (orientation: landscape){
     .logo{
         cursor: default;
-        margin-top: -15px;
+        margin-top: -41px;
         width: 14%;
         margin-left: 1rem;
     }
     nav{
         margin-left: 90%;
-        margin-top: -12%;
+        margin-top: -10%;
     }
     .cabeçalio {
-        height: 17%;
+        height: 19%;
         width: 100%;
         position: fixed;
         background: var(--bg-color);
         z-index: 999;
+    }
+    .pratica .btn-custom {
+        margin-left: 44%;
+    }
+    .caixa-valores .btn-custom {
+        margin-left: 44%;
+        width: 120px;
+    }
+    .logo-footer {
+        cursor: default;
+        width: 20%;
+        margin-left: -68rem;
+        margin-top: -2%;
+    }
+    .footer-caixa {
+        position: relative;
+        top: -44%;
     }
 }
 

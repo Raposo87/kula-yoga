@@ -40,6 +40,11 @@ html, body{
     --p: "Playwrite CO Guides", serif;
 }
 
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 5px;
+}
+
 header{
     top: 0;
     height: 82px;
