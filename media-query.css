@@ -82,18 +82,18 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 830px){
+@media screen and (min-width: 400px) and (max-width: 838px){
     .logo{
         cursor: default;
-        margin-top: -4px;
-        width: 14%;
+        margin-top: -20px;
+        width: 33%;
     }
     nav{
         margin-left: 90%;
-        margin-top: -14%;
+        margin-top: -26%;
     }
     .cabeçalio {
-        height: 22%;
+        height: 11%;
         width: 100%;
         position: fixed;
         background: var(--bg-color);
