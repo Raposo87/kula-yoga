@@ -50,12 +50,17 @@
         margin-left: 90%;
         margin-top: -10%;
     }
+    header{
+        top: 0;
+        height: 103px;
+        background-color: #faf4dec0;
+    }
     .cabeçalio {
         height: 19%;
         width: 100%;
         position: fixed;
-        background: var(--bg-color);
-        z-index: 999;
+        background: #faf4de65;
+        z-index: 1000;
     }
     .pratica .btn-custom {
         margin-left: 44%;
