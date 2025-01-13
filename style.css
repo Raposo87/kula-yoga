@@ -248,6 +248,8 @@ p{
     transform: scale(0.98);
   }
   .pratica .btn-custom{
+    background: var(--hover-bg);
+    color: var(--hover-text);
    margin-left: 35%;
   }
 
@@ -342,6 +344,8 @@ p{
     padding: 10px;
 }
 .caixa-valores .btn-custom{
+    background: var(--hover-bg);
+    color: var(--hover-text);
     margin-left: 30%;
     width: 120px;
 }
