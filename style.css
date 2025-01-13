@@ -394,3 +394,32 @@ footer i{
     color: var(--midia-social);
     font-size: 20px;
 }
+
+.custom-alert {
+    position: fixed;
+    right: -350px;
+    top: 20px;
+    background-color: var(--midia-social);
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: right 1s ease;
+    z-index: 1000;
+}
+
+.custom-alert.show {
+    right: 20px;
+}
+
+.content {
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    padding: 0 5px;
+}
