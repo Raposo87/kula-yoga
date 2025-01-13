@@ -17,7 +17,7 @@
     .logo {
         cursor: default;
         margin-top: -68px;
-        width: 14%;
+        width: 1%;
         margin-left: 1rem;
     }
     .nav-list{
@@ -42,7 +42,7 @@
 @media (orientation: landscape){
     .logo{
         cursor: default;
-        margin-top: -41px;
+        margin-top: -24px;
         width: 14%;
         margin-left: 1rem;
     }
@@ -67,8 +67,7 @@
     .logo-footer {
         cursor: default;
         width: 20%;
-        margin-left: -68rem;
-        margin-top: -2%;
+        margin-left: -34rem;
     }
     .footer-caixa {
         position: relative;
@@ -80,7 +79,7 @@
     .logo{
         cursor: default;
         margin-top: -20px;
-        width: 33%;
+        width: 30%;
     }
     nav{
         margin-left: 90%;
