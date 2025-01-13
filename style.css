@@ -398,7 +398,7 @@ footer i{
 .custom-alert {
     position: fixed;
     right: -350px;
-    top: 20px;
+    top: 350px;
     background-color: var(--midia-social);
     color: white;
     padding: 16px;
