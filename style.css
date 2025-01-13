@@ -54,8 +54,8 @@ html, body{
 
 header{
     top: 0;
-    height: 82px;
-    background-color: #faf4de4a;
+    height: 103px;
+    background-color: #faf4dec0;
 }
 a{
     color: var(--h1);
