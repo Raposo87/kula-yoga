@@ -152,7 +152,7 @@ section{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    min-height: 100vh;
+    min-height: 48vh;   /*ver sempre que for acrescentar uma nova section*/
     
 }
 .casa{
@@ -296,20 +296,25 @@ p{
     border-radius: 4px;
     z-index: 1;
 }
+
 .calendario{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 60%;
 }
-.calendario p{
+.calendario img{
+    width: 100%;
+    box-shadow: 3px 3px 5px #544039;
+    margin-bottom: 10px;
+}
+.calendario-caixa{
+    margin-top: 30px;
+}
+.calendario-caixa p{
     width: 300px;
     background-color: #544039;
     color: #FAF4DE;
     border-radius: 10px;
-    padding: 15px;
-    font-size: 20px;
+    padding: 3px;
+    font-size: 17px;
     align-items: center;
 }
 .calendario a{
