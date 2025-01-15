@@ -55,7 +55,7 @@ html, body{
 header{
     top: 0;
     height: 103px;
-    background-color: #faf4dec0;
+    background-color: #faf4ded3;
 }
 a{
     color: var(--h1);
@@ -67,9 +67,9 @@ a:hover{
     opacity: 0,7;
 }
 .cabeçalio{
-    height: 12%;
+    height: 14%;
     position: fixed;
-    background: #faf4de42;
+    background: #faf4de93;
     z-index: 999;
 }
 
