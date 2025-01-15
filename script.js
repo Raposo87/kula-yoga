@@ -114,3 +114,94 @@ window.addEventListener('scroll', function() {
         showAlert();
     }
 });
+
+//------------ zoom-------------//
+
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+const img = document.getElementById('horarioImg');
+const closeBtn = document.getElementsByClassName('close')[0];
+let currentScale = 1;
+let isDragging = false;
+let startX, startY, translateX = 0, translateY = 0;
+
+// Abrir modal ao clicar na imagem
+img.onclick = function() {
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    currentScale = 1;
+    translateX = 0;
+    translateY = 0;
+    updateTransform();
+}
+
+// Fechar modal
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+}
+
+// Função para ajustar o zoom
+function adjustZoom(delta) {
+    currentScale = Math.max(1, currentScale + delta);
+    updateTransform();
+}
+
+// Resetar zoom
+function resetZoom() {
+    currentScale = 1;
+    translateX = 0;
+    translateY = 0;
+    updateTransform();
+}
+
+// Atualizar transformação
+function updateTransform() {
+    modalImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+}
+
+// Zoom com a roda do mouse
+modal.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -0.1 : 0.1;
+    adjustZoom(delta);
+});
+
+// Arrastar imagem
+modalImg.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    startX = e.clientX - translateX;
+    startY = e.clientY - translateY;
+});
+
+document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateTransform();
+    }
+});
+
+document.addEventListener('mouseup', function() {
+    isDragging = false;
+});
+
+// Suporte para dispositivos touch
+modalImg.addEventListener('touchstart', function(e) {
+    const touch = e.touches[0];
+    isDragging = true;
+    startX = touch.clientX - translateX;
+    startY = touch.clientY - translateY;
+});
+
+document.addEventListener('touchmove', function(e) {
+    if (isDragging) {
+        const touch = e.touches[0];
+        translateX = touch.clientX - startX;
+        translateY = touch.clientY - startY;
+        updateTransform();
+    }
+});
+
+document.addEventListener('touchend', function() {
+    isDragging = false;
+});

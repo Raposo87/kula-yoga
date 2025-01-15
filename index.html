@@ -114,8 +114,17 @@
     <section class="calendario" id="calendario">
         <div class="calendario-caixa">
             <h3>Horário Kula Yoga:</h3>
-            <img src="horarios.jpg" alt="">
+            <img src="horarios.jpg" alt="" id="horarioImg">
             <p>Horários especiais para grupos, workshops e outros eventos aos finais de semana.</p>
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div class="zoom-controls">
+                <button class="zoom-button" onclick="adjustZoom(0.1)">+</button>
+                <button class="zoom-button" onclick="adjustZoom(-0.1)">-</button>
+                <button class="zoom-button" onclick="resetZoom()">Reset</button>
+            </div>
         </div>
     </section>
 
