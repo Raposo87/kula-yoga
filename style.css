@@ -296,6 +296,25 @@ p{
     border-radius: 4px;
     z-index: 1;
 }
+.calendario{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calendario p{
+    width: 300px;
+    background-color: #544039;
+    color: #FAF4DE;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    align-items: center;
+}
+.calendario a{
+    
+}
 
 .prev {
     left: 10px;
@@ -406,12 +425,15 @@ footer i{
     top: 350px;
     background-color: var(--midia-social);
     color: white;
-    padding: 16px;
+    padding: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 250px;
     transition: right 1s ease;
     z-index: 1000;
+}
+.custom-alert a{
+    font-size: 16px;
 }
 
 .custom-alert.show {
@@ -426,5 +448,4 @@ footer i{
 .close-btn {
     float: right;
     cursor: pointer;
-    padding: 0 5px;
 }

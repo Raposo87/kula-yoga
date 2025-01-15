@@ -44,6 +44,9 @@
         margin-right: 51%;
         bottom: 40px;
     }
+    .calendario{
+        margin-top: 30px;
+    }
     .pratica .btn-custom {
         background: var(--hover-bg);
         color: var(--hover-text);
