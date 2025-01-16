@@ -197,9 +197,7 @@ p{
 }
 .casa img{
     width: 100%;
-    position: relative;
-    top: -22px;
-    height: 300px;
+    height: 100%;
 }
 
 .pratica{
@@ -452,13 +450,13 @@ footer{
 }
 .footer-caixa{
     position: relative;
-    top: -15%;
+    top: -6%;
 }
 .logo-footer{
     cursor: default;
-    width: 30%;
+    width: 21%;
     margin-left: -18rem;
-    margin-top: -4%;
+    margin-top: 16%;
 }
 footer h3{
     font-size: 23px;
