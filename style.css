@@ -352,9 +352,8 @@ p{
 }
 
 .zoom-controls {
-    margin-bottom: 30%;
     position: fixed;
-    bottom: 20px;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #883d1f;
@@ -368,6 +367,8 @@ p{
     margin: 0 5px;
     padding: 5px 10px;
     cursor: pointer;
+    color: #bd6340;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .prev {
