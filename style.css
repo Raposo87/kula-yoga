@@ -198,6 +198,7 @@ p{
 .casa img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .pratica{
@@ -419,7 +420,7 @@ p{
 .caixa-valores .btn-custom{
     background: var(--hover-bg);
     color: var(--hover-text);
-    margin-left: 30%;
+    margin-left: 32%;
     width: 120px;
 }
 
