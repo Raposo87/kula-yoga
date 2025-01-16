@@ -172,7 +172,7 @@ section{
 
 h1{
     color: var(--h1);
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: "Afacad Flux", serif;
     text-align: center;
 }
@@ -185,14 +185,14 @@ h2{
 p{
     width: 80%;
     color: #da3a00a2;
-    font-size: 40px;
+    font-size: 25px;
     font-family: "Playwrite CO Guides", serif;
 }
 .social-icons{
     position: relative;
     left: 57%;
     margin-right: 51%;
-    bottom: 40px;
+    bottom: 20px;
 }
 .social-icons .bx{
     border-radius: 30%;
