@@ -219,7 +219,6 @@ p{
 }
 
 .pratica h2{
-    text-align: center;
     margin-top: 5rem;
     margin-bottom: 10px;
 }
@@ -418,10 +417,17 @@ p{
     display: flex;
 }
 .valores p{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    line-height: 1.5;
     font-size: 25px;
     width: 100%;
     margin-bottom: 20px;
     color: #883d1f;
+}
+.caixa-valores p span {
+    margin-left: 10px;
 }
 .caixa-valores img{
     width: 100%;
