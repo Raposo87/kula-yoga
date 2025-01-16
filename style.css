@@ -155,6 +155,16 @@ section{
     min-height: 48vh;   /*ver sempre que for acrescentar uma nova section*/
     
 }
+.casa, .pratica, .nosso-espaço, .calendario, .valores, .professoras {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .casa{
     background-size: cover;
     background-position: center;

@@ -205,3 +205,23 @@ document.addEventListener('touchmove', function(e) {
 document.addEventListener('touchend', function() {
     isDragging = false;
 });
+
+//------animação de seção-------//
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('section-visible');
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+// Usando um nome diferente para evitar conflito
+const animatedSections = document.querySelectorAll('.casa, .pratica, .nosso-espaço, .calendario, .valores, .professoras');
+
+// Observa cada section
+animatedSections.forEach(section => {
+    scrollObserver.observe(section);
+});
