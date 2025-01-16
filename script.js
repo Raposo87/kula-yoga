@@ -218,7 +218,6 @@ const scrollObserver = new IntersectionObserver((entries) => {
     threshold: 0.4
 });
 
-// Usando um nome diferente para evitar conflito
 const animatedSections = document.querySelectorAll('.casa, .pratica, .nosso-espaço, .calendario, .valores, .professoras');
 
 // Observa cada section

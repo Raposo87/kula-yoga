@@ -362,7 +362,7 @@ p{
 
 .zoom-controls {
     position: fixed;
-    bottom: 20%;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #883d1f;
