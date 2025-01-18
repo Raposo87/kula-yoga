@@ -78,8 +78,8 @@
         top: 100%;
         left: 0;
         overflow-x: hidden;
-    }
-   /* .logo{
+    }*/
+    .logo{
         cursor: default;
         margin-top: -24px;
         width: 11%;
@@ -121,7 +121,7 @@
     .footer-caixa {
         position: relative;
         top: -4%;
-    }*/
+    }
 }
 
 @media screen and (min-width: 400px) and (max-width: 838px){
