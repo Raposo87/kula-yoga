@@ -442,7 +442,7 @@ p{
 }
 
 .professoras{
-    background-color: #ffead979;
+    background-color: #e5976973;
 }
 .professoras-caixa{
     text-align: center;
@@ -509,6 +509,7 @@ footer i{
 
 .custom-alert.show {
     right: 20px;
+    margin-top: -10%;
 }
 
 .content {
