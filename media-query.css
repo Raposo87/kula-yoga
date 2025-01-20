@@ -2,6 +2,61 @@
 @charset "UTF-8";
 
 
+@media screen and (min-width: 400px) and (max-width: 838px){
+    .logo{
+        cursor: default;
+        margin-top: -21px;
+        width: 25%;
+        margin-left: 1%;
+    }
+    nav{
+        margin-left: 90%;
+        margin-top: -25%;
+    }
+    .nav-list.active {
+        right: 1px;
+        margin-top: -8%;
+        transform: translateX(0);
+    }
+    .mobile-menu {
+        margin-top: 49px;
+        display: block;
+    }
+    .header{
+        height: 103px;
+    }
+    .cabeçalio {
+        height: 13%;
+        width: 100%;
+        position: fixed;
+        background: #faf4dec0;
+        z-index: 999;
+    }
+
+    .logo-footer{
+        cursor: default;
+        width: 16%;
+        margin-left: -21rem;
+        margin-top: 4%;
+    }
+    footer{
+        text-align: center;
+        background: var(--h2);
+        height: 19rem;
+    }
+    .footer-caixa{
+        position: relative;
+        top: -15%;
+    }
+    .pratica .btn-custom{
+        margin-left: 45%;
+       }
+       .caixa-valores .btn-custom{
+        margin-left: 35%;
+    }
+    
+}
+
 @media screen and (min-width: 840px) and  (max-width: 1400px){
     .cabeçalio {
         width: 100%;
@@ -122,58 +177,3 @@
         top: -4%;
     }
 }*/
-
-@media screen and (min-width: 400px) and (max-width: 838px){
-    .logo{
-        cursor: default;
-        margin-top: -32px;
-        width: 25%;
-        margin-left: 1%;
-    }
-    nav{
-        margin-left: 90%;
-        margin-top: -25%;
-    }
-    .nav-list.active {
-        right: 1px;
-        margin-top: -8%;
-        transform: translateX(0);
-    }
-    .mobile-menu {
-        margin-top: 49px;
-        display: block;
-    }
-    .header{
-        height: 103px;
-    }
-    .cabeçalio {
-        height: 13%;
-        width: 100%;
-        position: fixed;
-        background: #faf4dec0;
-        z-index: 999;
-    }
-
-    .logo-footer{
-        cursor: default;
-        width: 16%;
-        margin-left: -21rem;
-        margin-top: 4%;
-    }
-    footer{
-        text-align: center;
-        background: var(--h2);
-        height: 19rem;
-    }
-    .footer-caixa{
-        position: relative;
-        top: -15%;
-    }
-    .pratica .btn-custom{
-        margin-left: 45%;
-       }
-       .caixa-valores .btn-custom{
-        margin-left: 35%;
-    }
-    
-}
