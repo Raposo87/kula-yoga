@@ -57,7 +57,7 @@ html, body{
 header{
     top: 0;
     height: 103px;
-    background-color: #faf4ded3;
+    background-color: white;
 }
 a{
     color: var(--h1);
