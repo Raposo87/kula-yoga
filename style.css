@@ -69,22 +69,22 @@ a:hover{
     opacity: 0,7;
 }
 .cabeçalio{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.864), rgba(255, 255, 255, 0)), url(imagemCabeçalho.png);
     display: block;
     height: 6rem;
     position: fixed;
-    background: #faf4de93;
     z-index: 999;
 }
 
 .logo{
     cursor: default;
-    width: 35%;
-    margin-left: -1rem;
-    margin-top: -3%;
+    width: 21%;
+    margin-left: 1rem;
+    margin-top: 2%;
 }
 nav{
-    margin-left: 96%;
-    margin-top: -30%;
+    margin-left: 92%;
+    margin-top: -22%;
 }
 
 .nav-list{

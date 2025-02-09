@@ -58,15 +58,19 @@
 
 @media screen and (min-width: 769px) and  (max-width: 1400px){
     .cabeçalio {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.556), rgba(255, 255, 255, 0.193)), url(imagemCabeçalho.png);
+        background-size: cover;
+        background-position: center;
         width: 100%;
         height: 7rem;
         position: fixed;
-        background: #faf4de65;
         z-index: 999;
     }
     header{
+        
         height: 114px;
-        background-color: white;
+        background-size: cover;
+        background-position: center;
     }
     section{
         margin-right: 10%;
@@ -74,9 +78,9 @@
     }
     .logo {
         cursor: default;
-        margin-top: -3%;
-        width: 11rem;
-        margin-left: 2rem;
+        margin-top: 1%;
+        width: 6rem;
+        margin-left: 3rem;
     }
     nav{
         display: block;
@@ -84,7 +88,7 @@
         margin-top: -24rem;
     }
     .mobile-menu {
-        margin-top: 17rem;
+        margin-top: 18rem;
         display: block;
     }
     .nav-list{
