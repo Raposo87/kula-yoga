@@ -445,7 +445,10 @@ p{
 }
 
 .professoras{
-    background-color: #e5976973;
+    background-image: url(imagemFundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .professoras-caixa{
     text-align: center;
