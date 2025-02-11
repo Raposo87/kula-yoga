@@ -468,7 +468,8 @@ p{
     position: relative;
     font-size: 20px;
     width: 100%;
-    
+    color: #362d2d;
+    font-weight: 600;
 }
 
 footer{
