@@ -55,6 +55,11 @@
         position: relative;
         top: -15%;
     }
+    .carrossel {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
     
 }
 
@@ -106,6 +111,11 @@
         position: relative;
         left: 60%;
         margin-right: 51%;
+    }
+    .carrossel {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
     }
     .calendario{
         margin-top: 30px;
