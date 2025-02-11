@@ -448,10 +448,9 @@ p{
 }
 
 .professoras{
-    background-image: url(https://i.pinimg.com/736x/bb/61/00/bb6100b2a069a0926cb8bb7880536719.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(195, 134, 99, 0.926), rgba(255, 119, 70, 0.872));
     
+    background-size: cover;
 }
 .professoras-caixa{
     text-align: center;
