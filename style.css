@@ -275,8 +275,13 @@ p{
 }
 .carrossel {
     position: relative;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+}
+.nosso-espaço img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
 .carrossel-container {
@@ -409,10 +414,7 @@ p{
 .dot.active {
     background-color: #717171;
 }
-.nosso-espaço img{
-    width: 100%;
-    padding: 10px;
-}
+
 
 .valores{
     background-image: linear-gradient(rgba(255, 255, 255, 0.926), rgba(255, 255, 255, 0.926)),url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
