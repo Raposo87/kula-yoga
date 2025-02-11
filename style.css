@@ -467,7 +467,8 @@ p{
 .professoras-caixa p{
     position: relative;
     font-size: 20px;
-    left: 10%;
+    width: 100%;
+    
 }
 
 footer{
