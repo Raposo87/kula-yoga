@@ -8,7 +8,7 @@
         background-color: white;
     }
     .cabeçalio {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.556), rgba(255, 255, 255, 0.193)), url(imagemCabeçalho.png);
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.556), rgba(255, 255, 255, 0.193)), url(https://i.pinimg.com/736x/73/e7/12/73e712d364d7b1a344ebaa5887ce7c7b.jpg);
         background-size: cover;
         background-position: center;
         display: block;
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 769px) and  (max-width: 1400px){
     .cabeçalio {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.556), rgba(255, 255, 255, 0.193)), url(imagemCabeçalho.png);
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.556), rgba(255, 255, 255, 0.193)), url(https://i.pinimg.com/736x/73/e7/12/73e712d364d7b1a344ebaa5887ce7c7b.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;

@@ -69,7 +69,7 @@ a:hover{
     opacity: 0,7;
 }
 .cabeçalio{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.864), rgba(255, 255, 255, 0)), url(imagemCabeçalho.png);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.864), rgba(255, 255, 255, 0)), url(https://i.pinimg.com/736x/73/e7/12/73e712d364d7b1a344ebaa5887ce7c7b.jpg);
     display: block;
     height: 6rem;
     position: fixed;
@@ -447,7 +447,7 @@ p{
 }
 
 .professoras{
-    background-image: url(imagemFundo.png);
+    background-image: url(https://i.pinimg.com/736x/bb/61/00/bb6100b2a069a0926cb8bb7880536719.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
