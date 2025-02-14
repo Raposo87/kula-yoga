@@ -46,14 +46,21 @@
         margin-left: -21rem;
         margin-top: 4%;
     }
+    .selo{
+        position: relative;
+        cursor: default;
+        width: 5rem;
+        margin-left: 18rem;
+        top: -10%;
+    }
     footer{
         text-align: center;
         background: var(--h2);
-        height: 19rem;
+        height: 24rem;
     }
     .footer-caixa{
         position: relative;
-        top: -15%;
+        top: -6%;
     }
     .carrossel {
         position: relative;
@@ -137,6 +144,13 @@
         width: 10%;
         margin-left: 12rem;
         margin-top: 0rem;
+    }
+    .selo {
+        position: relative;
+        cursor: default;
+        width: 5rem;
+        margin-left: 15rem;
+        top: -4%;
     }
 
 }
