@@ -49,14 +49,14 @@
     .selo{
         position: relative;
         cursor: default;
-        width: 5rem;
+        width: 7rem;
         margin-left: 18rem;
         top: -10%;
     }
     footer{
         text-align: center;
         background: var(--h2);
-        height: 24rem;
+        height: 26rem;
     }
     .footer-caixa{
         position: relative;
@@ -148,7 +148,7 @@
     .selo {
         position: relative;
         cursor: default;
-        width: 5rem;
+        width: 8rem;
         margin-left: 15rem;
         top: -4%;
     }
