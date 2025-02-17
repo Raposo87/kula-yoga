@@ -219,6 +219,10 @@ p{
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento interno */
 }
 
 .pratica h2{
@@ -253,18 +257,45 @@ p{
   
   .btn-custom:hover {
     color: var(--hover-text);
-    background-color: var(--midia-social);
+    background-color: var(--h1);
   }
   
   /* Efeito ao clicar */
   .btn-custom:active {
     transform: scale(0.98);
   }
-  .pratica .btn-custom{
-    background: var(--hover-bg);
-    color: var(--hover-text);
-   margin-left: 35%;
-  }
+  
+  .pulse-button {
+    background-color: var(--h2);
+    color: white; 
+    padding: 15px 30px; 
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Transição suave */
+    animation: pulse 2s infinite; /* Aplica a animação de pulsação */
+}
+
+/* Efeito de hover */
+.pulse-button:hover {
+    background-color: #FF8C66; 
+}
+
+/* Definição da animação de pulsação */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamanho normal */
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta ligeiramente */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho normal */
+    }
+}
 
 .nosso-espaço{
     background-color: #ffead9d3;
@@ -445,6 +476,10 @@ p{
     color: var(--hover-text);
     margin-left: 32%;
     width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .professoras{
