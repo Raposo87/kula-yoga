@@ -85,6 +85,7 @@ a:hover{
 nav{
     margin-left: 92%;
     margin-top: -22%;
+    cursor: pointer;
 }
 
 .nav-list{
