@@ -217,7 +217,7 @@ const scrollObserver = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.2
+    threshold: 0.1
 });
 
 const animatedSections = document.querySelectorAll('.casa, .pratica, .nosso-espaço, .calendario, .valores, .professoras');
