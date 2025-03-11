@@ -2,7 +2,7 @@
 @charset "UTF-8";
 
 
-@media screen and (min-width: 390px) and (max-width: 768px){
+@media screen and (min-width: 375px) and (max-width: 768px){
     .header{
         height: 119px;
         background-color: white;
@@ -38,7 +38,9 @@
         margin-top: 49px;
         display: block;
     }
-   
+    .professoras-caixa img{
+        border-radius: 50%;
+    }
 
     .logo-footer{
         cursor: default;
