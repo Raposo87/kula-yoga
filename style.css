@@ -493,8 +493,8 @@ p{
 }
 .professoras-caixa img{
     border: solid var(--header-color);
-    border-radius: 50%;
-    width: 11rem;
+    /*border-radius: 50%;*/
+    width: 16rem;
     margin-top: 30px;
     margin-bottom: 20px;
     box-shadow: 3px 3px 10px #8f534775;
