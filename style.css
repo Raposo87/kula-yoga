@@ -121,6 +121,7 @@ nav{
     transition: transform 0.3s ease-in;
 }
 
+
 .nav-list.active{
     right: 0;
     transform: translateX(0);
@@ -141,8 +142,8 @@ nav{
     transform: rotate(-45deg) translate(-8px, 8px);
 }
 
-.mobile-menu.active .line2 {
-    opacity: 0;
+.mobile-menu .line2{
+    right: 44%;
 }
 
 .mobile-menu.active .line3 {
@@ -184,7 +185,8 @@ h2{
     color: var(--h2);
     font-family: "Afacad Flux", serif;
     font-size: 35px;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2%;
 }
 p{
     width: 80%;
@@ -228,8 +230,8 @@ p{
 
 .pratica h2{
     font-size: 35px;
-    margin-top: 5rem;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2%;
 }
 .pratica p{
     color: var(--header-color);
@@ -304,6 +306,7 @@ p{
 .nosso-espaço p{
     font-size: 25px;
     width: 100%;
+    margin-bottom: 2%;
 }
 .carrossel {
     position: relative;
