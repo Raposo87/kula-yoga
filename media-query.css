@@ -95,7 +95,7 @@
 /* Tablets e Desktops (769px-1700px) */
 @media screen and (min-width: 769px) and (max-width: 1700px) {
   .cabeçalio {
-    height: 7rem;
+    height: 5rem;
   }
   
   header {
@@ -110,7 +110,7 @@
   
   .logo {
     margin: 1% 0 0 10%;
-    width: 6rem;
+    width: 4rem;
   }
   
   nav {
@@ -118,7 +118,7 @@
   }
   
   .mobile-menu {
-    margin-top: 18.5rem;
+    margin-top: 19.5rem;
   }
   
   .nav-list {
