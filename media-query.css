@@ -57,6 +57,10 @@
     margin-top: -8%;
     transform: translateX(0);
   }
+  .caixa-eventos img {
+    width: 100%;
+    padding: 10px;
+}
   
   .mobile-menu {
     margin-top: 49px;
@@ -65,9 +69,17 @@
   .mobile-menu .line2 {
     right: 178%;
   }
-  
+  .calendario img {
+    width: 100%;
+  }
+  .caixa-valores img {
+    width: 100%;
+  }
   .professoras-caixa img {
     border-radius: 50%;
+  }
+  .caixa-valores .btn-custom{
+    margin-left: 33%;
   }
   
   .logo-footer {
@@ -139,15 +151,16 @@
     margin-top: 30px;
   }
   
-  .pratica .btn-custom, .caixa-valores .btn-custom {
+  .pratica .btn-custom, .caixa-valores .caixa-eventos .btn-custom {
     background: var(--hover-bg);
     color: var(--hover-text);
     margin-left: 44%;
   }
   
-  .caixa-valores .btn-custom {
+  .caixa-valores .caixa-eventos .btn-custom {
     width: 120px;
   }
+ 
   
   .logo-footer {
     display: block;

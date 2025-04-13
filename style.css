@@ -218,6 +218,42 @@ p {
     font-size: 30px;
     padding: 2px;
 }
+/* eventos */
+.eventos {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.926), rgba(255, 255, 255, 0.926)), url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eventos p {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 20px;
+    width: 100%;
+    color: #883d1f;
+}
+
+.caixa-eventos p span {
+    margin-left: 10px;
+}
+
+.caixa-eventos img {
+    width: 35%;
+    padding: 10px;
+}
+
+.caixa-eventos .btn-custom {
+    background: var(--hover-bg);
+    color: var(--hover-text);
+    margin-left: 32%;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Seção Prática */
 .pratica {
@@ -363,9 +399,12 @@ p {
 }
 
 .calendario img {
-    width: 100%;
+    width: 46%;
     box-shadow: 3px 3px 5px #544039;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .calendario-caixa {
@@ -455,14 +494,17 @@ p {
 }
 
 .caixa-valores img {
-    width: 100%;
+    width: 77%;
     padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .caixa-valores .btn-custom {
     background: var(--hover-bg);
     color: var(--hover-text);
-    margin-left: 32%;
+    margin-left: 44%;
     width: 120px;
     display: flex;
     flex-direction: column;
