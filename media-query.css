@@ -10,7 +10,7 @@
   }
   
   .cabeçalio {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.556), rgba(255, 255, 255, 0.193)), url(https://i.pinimg.com/736x/73/e7/12/73e712d364d7b1a344ebaa5887ce7c7b.jpg);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.556), rgba(255, 255, 255, 0.193)), url('https://i.pinimg.com/736x/22/11/83/2211835fe9959ddcfda631615c0a9db7.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
