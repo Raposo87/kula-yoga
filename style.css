@@ -406,6 +406,10 @@ hr {
 /* Calendário */
 .calendario h3 {
     margin-top: 15%;
+    color: var(--h2);
+    font-family: "Afacad Flux", serif;
+    font-size: 35px;
+    margin: 1rem 0 2% 0;
 }
 
 .calendario img {
