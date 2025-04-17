@@ -273,6 +273,16 @@ p {
     width: 100%;
     margin-bottom: 20px;
 }
+hr {
+    border: none;            /* Remove a borda padrão */
+    height: 2px;             /* Altura da linha */
+    background-color: var(--header-color);  /* Cor da linha */
+    margin: 20px 0;          /* Espaçamento acima e abaixo */
+  }
+.hatha-yoga{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 /* Botões */
 .btn-custom {
