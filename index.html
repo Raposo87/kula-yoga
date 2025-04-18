@@ -19,8 +19,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <script>
   function gtag_report_conversion(url) {
     var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
+      if (typeof('https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09') != 'undefined') {
+        window.location = 'https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09';
       }
     };
     gtag('event', 'conversion', {
@@ -277,9 +277,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </p>
       </div>
 
-      <a href="https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09" target="_blank">
-        <button class="pulse-button" tabindex="0" onclick="return gtag_report_conversion()" >Reserva a tua aula!</button>
-      </a>
+      <a href="https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09" target="_blank" onclick="return gtag_report_conversion('https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09')">
+        <button class="pulse-button" tabindex="0" >Reserva a tua aula!</button>
+    </a>
     </section>
 
     <hr>
