@@ -117,6 +117,28 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
+// patrocinios:
+
+
+
+// Controle do carrossel de patrocinadores (opcional)
+document.addEventListener('DOMContentLoaded', () => {
+    const carrossel = document.querySelector('.patrocinadores-carrossel');
+    
+    // Duplica os itens para um efeito contínuo
+    carrossel.innerHTML += carrossel.innerHTML;
+    
+    // Pausa a animação no hover
+    carrossel.addEventListener('mouseenter', () => {
+      carrossel.style.animationPlayState = 'paused';
+    });
+    
+    carrossel.addEventListener('mouseleave', () => {
+      carrossel.style.animationPlayState = 'running';
+    });
+  });
+
 //------------ zoom-------------//
 
 const modal = document.getElementById('imageModal');

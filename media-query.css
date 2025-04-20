@@ -111,6 +111,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
+        height: 5rem;
       }
     
       .logo {
@@ -121,9 +122,11 @@
       nav {
         margin: 0 !important;
       }
-  .cabeçalio {
-    height: 5rem;
-  }
+  .patrocinadores-container {
+   
+    top: -30px;
+    
+}
   
   header {
     height: 114px;
