@@ -624,3 +624,60 @@ footer i{
     font-size: 0.8rem;
     text-align: center;
 }
+
+
+/* Menu para desktop - mostra itens normalmente */
+@media screen and (min-width: 769px) {
+    .nav-list {
+      display: flex;
+      position: static;
+      width: auto;
+      height: auto;
+      background: transparent;
+      flex-direction: row;
+      transform: none;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+      margin-right: 2rem;
+    }
+  
+    .nav-list li {
+      opacity: 1;
+      margin-left: 0;
+      letter-spacing: normal;
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+  
+    nav {
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    .cabeçalio {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+  
+    .logo {
+      margin: 0;
+      width: 100px;
+    }
+  }
+  
+  /* Mantém o menu hamburguer para mobile */
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      display: none;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  }
