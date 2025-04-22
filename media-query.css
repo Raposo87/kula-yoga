@@ -54,7 +54,7 @@
   
   .nav-list.active {
     right: 1px;
-    margin-top: -8%;
+    margin-top: -18%;
     transform: translateX(0);
   }
   .caixa-eventos img {
@@ -160,10 +160,6 @@
     white-space: nowrap; /* Impede a quebra de linha */
     flex-wrap: nowrap; /* Garante que os itens não quebrem */
     gap: 60px;
-  }
-  
-  .casa {
-    margin-top: 3%;
   }
   
   .social-icons {
