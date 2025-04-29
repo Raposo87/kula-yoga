@@ -597,7 +597,7 @@ hr {
 footer{
     text-align: center;
     background: var(--h2);
-    height: 27rem;
+    height: 33rem;
 }
 .footer-caixa{
     position: relative;
@@ -661,9 +661,10 @@ footer i{
     float: right;
     cursor: pointer;
 }
-.igor{
-    font-size: 0.8rem;
-    text-align: center;
+
+.raposo img{
+    width: 7rem;
+    
 }
 
 
