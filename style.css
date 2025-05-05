@@ -580,7 +580,6 @@ hr {
 }
 .professoras-caixa img{
     border: solid var(--header-color);
-    /*border-radius: 50%;*/
     width: 16rem;
     margin-top: 30px;
     margin-bottom: 20px;
