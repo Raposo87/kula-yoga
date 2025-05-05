@@ -297,6 +297,8 @@ p {
     justify-content: center;
 }
 
+
+
 /* Seção Prática */
 .pratica {
     background-image: linear-gradient(rgba(255, 255, 255, 0.792), rgba(255, 255, 255, 0.791)), url('https://i.pinimg.com/474x/83/85/41/838541830510054f0e324ee811a6f717.jpg');
@@ -322,9 +324,9 @@ hr {
     background-color: var(--header-color);  /* Cor da linha */
     margin: 20px 0;          /* Espaçamento acima e abaixo */
   }
-.hatha-yoga{
-    margin-left: 10%;
-    margin-right: 10%;
+.vg-guest-booking{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Botões */
