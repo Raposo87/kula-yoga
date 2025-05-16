@@ -289,7 +289,7 @@ p {
 .caixa-eventos .btn-custom {
     background: var(--hover-bg);
     color: var(--hover-text);
-    margin-left: 32%;
+    margin-left: 29.5%;
     width: 120px;
     display: flex;
     flex-direction: column;
