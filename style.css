@@ -297,6 +297,36 @@ p {
     justify-content: center;
 }
 
+/*parallax*/
+.parallax {
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parallax-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.parallax-content p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 
 /* Seção Prática */
@@ -673,6 +703,7 @@ footer i{
 
 /* Menu para desktop - mostra itens normalmente */
 @media screen and (min-width: 769px) {
+    
     .nav-list {
       display: flex;
       position: static;
