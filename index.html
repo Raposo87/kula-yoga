@@ -97,6 +97,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=portrait"
     />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
     <title>
       Yoga Kula - Estúdio de Yoga em Lisboa | Aulas de Yoga Hatha, Vinyasa e
       Aéreo
@@ -202,15 +204,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </script>
 
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="https://res.cloudinary.com/dqn2v9mtu/image/upload/logoSemFundo_mrfs2z.png"
-      type="image/x-icon"
-    />
     <link rel="stylesheet" href="media-query.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dqn2v9mtu/image/upload/logoSemFundo_mrfs2z.png"
+      type="image/x-icon"
     />
     <link rel="canonical" href="https://yogakulastudio.pt" />
   </head>
@@ -964,7 +966,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </section>
 
         <a href="https://wa.me/+351933782610" target="_blank">
-          <button type="button" class="btn-custom">Pronto(a) para marcar a tua aula?</button>
+          <button type="button" class="btn-custom">
+            Pronto(a) para marcar a tua aula?
+          </button>
         </a>
       </div>
     </section>

@@ -778,10 +778,16 @@ footer i{
 /* Novo estilo para cartas de valores */
 .pack-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .pack-card:hover {
   transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Classes utilitárias para o novo layout */
@@ -827,10 +833,22 @@ margin-top: 2.20rem;}
 .bg-gray-100 { background-color: #f3f4f6; }
 .bg-\[#B08968\] { background-color: #B08968; }
 
-.rounded-xl { border-radius: 0.75rem; }
-.rounded-lg { border-radius: 0.5rem; }
+.rounded-xl { 
+  border-radius: 0.75rem; 
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+}
+.rounded-lg { 
+  border-radius: 0.5rem; 
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+}
 
-.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+.shadow-lg { 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
