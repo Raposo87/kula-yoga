@@ -215,6 +215,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       type="image/x-icon"
     />
     <link rel="canonical" href="https://yogakulastudio.pt" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -896,6 +897,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
           </div>
         </section>
+
+        <section id="comparison" class="mb-12 md:mb-20">
+          <div class="text-center mb-10">
+              <h2 class="text-3xl font-bold text-[#5D5C61]">Análise de Custo por Aula nos Packs</h2>
+              <p class="mt-2 text-md max-w-2xl mx-auto">Para o ajudar a visualizar o valor de cada opção, este gráfico compara o custo por cada aula nos diferentes packs. Quanto maior o pack, mais económica se torna a sua prática.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
+              <div class="chart-container">
+                  <canvas id="packsChart"></canvas>
+              </div>
+          </div>
+      </section>
 
         <section id="terms" class="max-w-4xl mx-auto mb-12">
           <div class="text-center mb-10">

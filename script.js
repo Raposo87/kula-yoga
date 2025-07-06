@@ -291,3 +291,136 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+//--grafico--//
+
+document.addEventListener('DOMContentLoaded', () => {
+    // === Lógica do Gráfico e Cards de Packs ===
+    const packsData = [
+        {
+            name: 'Pack Iniciação',
+            description: 'Ideal para quem quer começar ou manter uma prática ligeira.',
+            classes: 3,
+            price: 35,
+            validity: '1 mês',
+            color: '#E1CDB5'
+        },
+        {
+            name: 'Pack Equilíbrio',
+            description: 'Perfeito para integrar o yoga na sua rotina semanal.',
+            classes: 5,
+            price: 50,
+            validity: '2 meses',
+            color: '#B08968'
+        },
+        {
+            name: 'Pack Dedicação',
+            description: 'A opção mais económica para quem pratica com regularidade.',
+            classes: 10,
+            price: 90,
+            validity: '3 meses',
+            color: '#7F5539'
+        }
+    ];
+
+    function renderPacks() {
+        const container = document.getElementById('packs-container');
+        if (!container) return; 
+
+        packsData.forEach(pack => {
+            const pricePerClass = (pack.price / pack.classes).toFixed(2);
+            const card = document.createElement('div');
+            card.className = 'pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center';
+            card.innerHTML = `
+                <h3 class="text-2xl font-bold" style="color:${pack.color};">${pack.name}</h3>
+                <p class="text-base my-4 flex-grow">${pack.description}</p>
+                <div class="my-4">
+                    <span class="text-5xl font-bold text-[#5D5C61]">${pack.price}€</span>
+                </div>
+                <ul class="text-left space-y-2 text-base mx-auto mb-6">
+                    <li class="flex items-center"><span class="mr-2 text-xl" style="color:${pack.color};">&#10003;</span> ${pack.classes} Aulas</li>
+                    <li class="flex items-center"><span class="mr-2 text-xl" style="color:${pack.color};">&#10003;</span> Validade de ${pack.validity}</li>
+                    <li class="flex items-center"><span class="mr-2 text-xl" style="color:${pack.color};">&#10003;</span> Aulas partilháveis</li>
+                </ul>
+                <div class="mt-auto">
+                    <div class="bg-gray-100 rounded-lg p-3">
+                        <span class="font-semibold text-lg">${pricePerClass}€</span>
+                        <span class="text-gray-600"> / aula</span>
+                    </div>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function renderChart() {
+        const ctx = document.getElementById('packsChart');
+        if (!ctx) return; 
+
+        const chartData = {
+            labels: packsData.map(p => p.name),
+            datasets: [{
+                label: 'Preço por Aula (€)',
+                data: packsData.map(p => (p.price / p.classes).toFixed(2)),
+                backgroundColor: packsData.map(p => p.color),
+                borderColor: packsData.map(p => p.color),
+                borderWidth: 1,
+                borderRadius: 5,
+            }]
+        };
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: chartData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    label += new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(context.parsed.y);
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Custo por Aula (EUR)',
+                            font: {
+                                size: 14
+                            }
+                        },
+                        ticks: {
+                            callback: function(value, index, ticks) {
+                                return value + '€';
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    // Chame as funções para renderizar os packs e o gráfico
+    renderPacks();
+    renderChart();
+});

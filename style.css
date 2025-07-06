@@ -619,6 +619,42 @@ hr {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* === Estilos para a Seção de Preços (relacionados ao gráfico e cards) === */
+.pack-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pack-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px; /* Altura padrão para o gráfico */
+    max-height: 400px;
+}
+@media (min-width: 768px) {
+    .chart-container {
+        height: 300px; /* Altura maior em telas maiores */
+    }
+}
+/* Estilos para os detalhes (acordeão) - se você os tiver na seção de preços */
+details > summary {
+    list-style: none; /* Remove o marcador padrão dos detalhes */
+}
+details > summary::-webkit-details-marker {
+    display: none; /* Remove o marcador padrão no Webkit */
+}
+details[open] summary .arrow {
+    transform: rotate(90deg); /* Rotação da seta quando os detalhes estão abertos */
+}
+.arrow {
+    transition: transform 0.2s ease-in-out; /* Transição suave para a seta */
+}
+
 /* Grid para telas grandes */
 @media screen and (min-width: 769px) {
     .grid {
