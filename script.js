@@ -1,5 +1,3 @@
-
-
 // Seleciona os elementos necessários
 const mobileMenu = document.querySelector('.mobile-menu');
 const navList = document.querySelector('.nav-list');
@@ -50,10 +48,7 @@ mobileMenu.addEventListener('click', (evento) => {
     });
 });
 
-
-
 //--------------Botão ------------//
-
 
 document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
@@ -97,11 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000); // Muda a cada 5 segundos
 });
 
-
 //------ Alerta------//
 
- // Função para mostrar o alerta
- function showAlert() {
+// Função para mostrar o alerta
+function showAlert() {
     document.getElementById('customAlert').classList.add('show');
 }
 
@@ -117,10 +111,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
 // patrocinios:
-
-
 
 // Controle do carrossel de patrocinadores (opcional)
 document.addEventListener('DOMContentLoaded', () => {
@@ -247,4 +238,56 @@ const animatedSections = document.querySelectorAll('.casa, .pratica, .nosso-espa
 // Observa cada section
 animatedSections.forEach(section => {
     scrollObserver.observe(section);
+});
+
+// Funcionalidade para detalhes expansíveis na seção de valores
+document.addEventListener('DOMContentLoaded', () => {
+    // Adiciona funcionalidade aos detalhes expansíveis
+    const details = document.querySelectorAll('details');
+    
+    details.forEach(detail => {
+        const summary = detail.querySelector('summary');
+        const arrow = summary.querySelector('.arrow');
+        
+        if (summary && arrow) {
+            summary.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Fecha outros detalhes abertos
+                details.forEach(otherDetail => {
+                    if (otherDetail !== detail && otherDetail.open) {
+                        otherDetail.open = false;
+                        const otherArrow = otherDetail.querySelector('.arrow');
+                        if (otherArrow) {
+                            otherArrow.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+                
+                // Toggle do detalhe atual
+                detail.open = !detail.open;
+                
+                // Rotação da seta
+                if (detail.open) {
+                    arrow.style.transform = 'rotate(90deg)';
+                } else {
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        }
+    });
+    
+    // Adiciona efeito hover nas cartas
+    const packCards = document.querySelectorAll('.pack-card');
+    packCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-8px)';
+            card.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+            card.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';
+        });
+    });
 });

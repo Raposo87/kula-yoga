@@ -595,12 +595,22 @@ hr {
 .caixa-valores .btn-custom {
     background: var(--hover-bg);
     color: var(--hover-text);
-    margin-left: 44%;
-    width: 120px;
+    margin: 0 auto;
+    width: 156px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+/* Responsividade para o botão */
+@media screen and (max-width: 768px) {
+    .caixa-valores .btn-custom {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }
 
 /* Professoras */
@@ -754,8 +764,180 @@ footer i{
     .nav-list {
       display: none;
     }
+    .caixa-eventos img {
+        width: 100%;
+        padding: 34px;
+    }
+
   
     .nav-list.active {
       display: flex;
     }
   }
+
+/* Novo estilo para cartas de valores */
+.pack-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pack-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Classes utilitárias para o novo layout */
+.text-center { text-align: center; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-10 { margin-bottom: 2.5rem; 
+margin-top: 2.20rem;}
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mt-12 { margin-top: 3rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-auto { margin-top: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-4 { margin-top: 1rem; margin-bottom: 1rem; }
+.mr-2 { margin-right: 0.5rem; }
+.pt-4 { padding-top: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-3 { padding: 0.75rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+
+.text-4xl { font-size: 2.25rem; font-family: "Afacad Flux", serif; }
+.text-3xl { font-size: 1.7rem; font-family: "Afacad Flux", serif; }
+.text-2xl { font-size: 1.5rem; font-family: "Afacad Flux", serif; }
+.text-xl { font-size: 1.25rem; font-family: "Afacad Flux", serif; }
+.text-lg { font-size: 1.125rem; }
+.text-base { font-size: 1rem; }
+.text-sm { font-size: 0.875rem; }
+.text-5xl { font-size: 3rem; font-family: "Afacad Flux", serif; }
+
+.font-bold { font-weight: bold; }
+.font-semibold { font-weight: 600; }
+
+.text-\[#7F5539\] { color: #7F5539; }
+.text-\[#5D5C61\] { color: #5D5C61; }
+.text-\[#B08968\] { color: #B08968; }
+.text-gray-500 { color: #6b7280; }
+.text-gray-600 { color: #4b5563; }
+.text-white { color: white; }
+
+.bg-white { background-color: white; }
+.bg-gray-100 { background-color: #f3f4f6; }
+.bg-\[#B08968\] { background-color: #B08968; }
+
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-lg { border-radius: 0.5rem; }
+
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-grow { flex-grow: 1; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.gap-8 { gap: 2rem; }
+
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
+.max-w-6xl { max-width: 72rem; }
+
+.text-left { text-align: left; }
+
+.inline-block { display: inline-block; }
+
+.transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; }
+.duration-300 { transition-duration: 300ms; }
+
+.hover\:bg-\[#9C7A5A\]:hover { background-color: #9C7A5A; }
+
+.cursor-pointer { cursor: pointer; }
+
+.border-t { border-top-width: 1px; }
+.border-gray-200 { border-color: #e5e7eb; }
+
+.transform { transform: translateZ(0); }
+.transition-transform { transition-property: transform; }
+.duration-200 { transition-duration: 200ms; }
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .md\:text-5xl { font-size: 3rem; }
+  .md\:text-xl { font-size: 1.25rem; }
+  .md\:mb-16 { margin-bottom: 4rem; }
+  .md\:mb-20 { margin-bottom: 5rem; }
+  .md\:mt-20 { margin-top: 5rem; }
+  .md\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+}
+
+/* Estilo para o badge "Mais Popular" */
+.featured-monthly {
+  position: relative;
+  border: 2px solid #B08968;
+}
+
+.featured-badge {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background: #B08968;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(176, 137, 104, 0.3);
+}
+
+/* Estilo para o arrow nos detalhes */
+.arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+details[open] summary .arrow {
+  transform: rotate(90deg);
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .sm\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+}
+
+/* Remover estilos antigos das cartas */
+.valores-cards,
+.valor-card,
+.card-header,
+.card-content,
+.card-description,
+.card-price,
+.price-amount,
+.price-label,
+.card-icon,
+.featured-badge {
+  display: none;
+}

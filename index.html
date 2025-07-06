@@ -592,40 +592,379 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     <section class="valores" id="valores">
       <div class="caixa-valores">
-        <h2>Valores</h2>
-        <p>
-          🔸<span
-            >Pack família : 50% de desconto na segunda inscrição para membros do
-            mesmo agregado familiar</span
-          >
-        </p>
-        <p>🔸<span>Aula avulso - 15€</span></p>
-        <p>🔸<span>Pack experiência (3 aulas) - 35€ - prazo 15 dias</span></p>
-        <p>
-          🔸<span
-            >Mensalidade Kula - Acesso ilimitado às aulas + benefícios
-            exclusivos (aulas gravadas, descontos em workshops, eventos
-            especiais, etc.) por €75/mês</span
-          >
-        </p>
-        <p>
-          🔸<span
-            >Mensalidade Samadhi - 2x/semana + aulas gravadas por €60/mês</span
-          >
-        </p>
-        <p>
-          🔸<span
-            >Mensalidade Sadhana - 1x/semana + aulas gravadas por 45€</span
-          >
-        </p>
+        <header class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-[#7F5539] mb-2">Valores</h2>
+          <p class="text-lg max-w-3xl mx-auto">
+            Queremos que a sua prática de yoga seja flexível e adaptada ao seu
+            ritmo de vida. Encontre a opção perfeita para si, desde uma aula
+            única aos nossos pacotes de aulas.
+          </p>
+        </header>
 
-        <img
-          src="https://i.pinimg.com/736x/7f/46/d2/7f46d2fa8132873e1eb95a66eb7652e0.jpg"
-          alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
-        />
+        <section id="single-classes" class="mb-12">
+          <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-[#5D5C61]">Comece por Aqui</h3>
+            <p class="mt-2 text-md max-w-2xl mx-auto">
+              Ideal para a sua primeira visita ou para quem procura
+              flexibilidade total sem compromisso.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold text-[#B08968]">
+                Aula Experimental
+              </h4>
+              <p class="text-base my-4 flex-grow">
+                A oportunidade perfeita para conhecer o nosso estúdio, os nossos
+                professores e a nossa comunidade.
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">10€</span>
+              </div>
+              <p class="text-sm text-gray-500">
+                Válida apenas uma vez por pessoa.
+              </p>
+            </div>
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold text-[#B08968]">Aula Avulsa</h4>
+              <p class="text-base my-4 flex-grow">
+                Para quem deseja praticar sem compromissos, de acordo com a sua
+                agenda e disponibilidade.
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">15€</span>
+              </div>
+              <p class="text-sm text-gray-500">
+                Compre e marque sempre que quiser.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="packs" class="mb-12">
+          <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-[#5D5C61]">Pacotes de Aulas</h3>
+            <p class="mt-2 text-md max-w-2xl mx-auto">
+              Poupe com os nossos pacotes e integre o yoga na sua rotina. Todos
+              os pacotes permitem partilhar as suas aulas com amigos e
+              familiares.
+            </p>
+          </div>
+          <div
+            id="packs-container"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold" style="color: #e1cdb5">
+                Pacote Iniciação
+              </h4>
+              <p class="text-base my-4 flex-grow">
+                Ideal para quem quer começar ou manter uma prática ligeira.
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">35€</span>
+              </div>
+              <ul class="text-left space-y-2 text-base mx-auto mb-6">
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #e1cdb5"
+                    >&#10003;</span
+                  >
+                  3 Aulas
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #e1cdb5"
+                    >&#10003;</span
+                  >
+                  Validade de 1 mês
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #e1cdb5"
+                    >&#10003;</span
+                  >
+                  Aulas partilháveis
+                </li>
+              </ul>
+              <div class="mt-auto">
+                <div class="bg-gray-100 rounded-lg p-3">
+                  <span class="font-semibold text-lg">11.67€</span>
+                  <span class="text-gray-600"> / aula</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold" style="color: #b08968">
+                Pacote Equilíbrio
+              </h4>
+              <p class="text-base my-4 flex-grow">
+                Perfeito para integrar o yoga na sua rotina semanal.
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">50€</span>
+              </div>
+              <ul class="text-left space-y-2 text-base mx-auto mb-6">
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #b08968"
+                    >&#10003;</span
+                  >
+                  5 Aulas
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #b08968"
+                    >&#10003;</span
+                  >
+                  Validade de 2 meses
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #b08968"
+                    >&#10003;</span
+                  >
+                  Aulas partilháveis
+                </li>
+              </ul>
+              <div class="mt-auto">
+                <div class="bg-gray-100 rounded-lg p-3">
+                  <span class="font-semibold text-lg">10€</span>
+                  <span class="text-gray-600"> / aula</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold" style="color: #7f5539">
+                Pacote Dedicação
+              </h4>
+              <p class="text-base my-4 flex-grow">
+                A opção mais económica para quem pratica com regularidade.
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">90€</span>
+              </div>
+              <ul class="text-left space-y-2 text-base mx-auto mb-6">
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #7f5539"
+                    >&#10003;</span
+                  >
+                  10 Aulas
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #7f5539"
+                    >&#10003;</span
+                  >
+                  Validade de 3 meses
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl" style="color: #7f5539"
+                    >&#10003;</span
+                  >
+                  Aulas partilháveis
+                </li>
+              </ul>
+              <div class="mt-auto">
+                <div class="bg-gray-100 rounded-lg p-3">
+                  <span class="font-semibold text-lg">9€</span>
+                  <span class="text-gray-600"> / aula</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="monthly-plans" class="mb-12">
+          <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-[#5D5C61]">Mensalidades</h3>
+            <p class="mt-2 text-md max-w-2xl mx-auto">
+              Para quem quer integrar o yoga na sua rotina diária com benefícios
+              exclusivos.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold text-[#B08968]">
+                Mensalidade Sadhana
+              </h4>
+              <p class="text-base my-4 flex-grow">
+                1x por semana + aulas gravadas
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">45€</span>
+              </div>
+              <ul class="text-left space-y-2 text-base mx-auto mb-6">
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#B08968]">&#10003;</span> 4
+                  aulas por mês
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#B08968]">&#10003;</span>
+                  Aulas gravadas
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#B08968]">&#10003;</span>
+                  Acesso à comunidade
+                </li>
+              </ul>
+            </div>
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center featured-monthly"
+            >
+              <div class="featured-badge">Mais Popular</div>
+              <h4 class="text-2xl font-bold text-[#7F5539]">
+                Mensalidade Kula
+              </h4>
+              <p class="text-base my-4 flex-grow">
+                Acesso ilimitado às aulas + benefícios exclusivos
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">75€</span>
+              </div>
+              <ul class="text-left space-y-2 text-base mx-auto mb-6">
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
+                  Aulas ilimitadas
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
+                  Aulas gravadas
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
+                  Descontos em workshops
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
+                  Eventos especiais
+                </li>
+              </ul>
+            </div>
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold text-[#B08968]">
+                Mensalidade Samadhi
+              </h4>
+              <p class="text-base my-4 flex-grow">
+                2x por semana + aulas gravadas
+              </p>
+              <div class="my-4">
+                <span class="text-5xl font-bold text-[#5D5C61]">60€</span>
+              </div>
+              <ul class="text-left space-y-2 text-base mx-auto mb-6">
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#B08968]">&#10003;</span> 8
+                  aulas por mês
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#B08968]">&#10003;</span>
+                  Aulas gravadas
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 text-xl text-[#B08968]">&#10003;</span>
+                  Acesso à comunidade
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="special-offers" class="mb-12">
+          <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-[#5D5C61]">Ofertas Especiais</h3>
+            <p class="mt-2 text-md max-w-2xl mx-auto">
+              Condições especiais para famílias e grupos.
+            </p>
+          </div>
+          <div class="max-w-2xl mx-auto">
+            <div
+              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
+            >
+              <h4 class="text-2xl font-bold text-[#B08968]">Pacote Família</h4>
+              <p class="text-base my-4 flex-grow">
+                50% de desconto na segunda inscrição para membros do mesmo
+                agregado familiar
+              </p>
+              <div class="my-4">
+                <span class="text-3xl font-bold text-[#5D5C61]"
+                  >Desconto Especial</span
+                >
+              </div>
+              <p class="text-sm text-gray-500">
+                Aplicável a qualquer modalidade
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="terms" class="max-w-4xl mx-auto mb-12">
+          <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-[#5D5C61]">
+              Como Funciona & Condições
+            </h3>
+            <p class="mt-2 text-md max-w-2xl mx-auto">
+              Para garantir uma experiência transparente e positiva para todos,
+              detalhamos abaixo as nossas condições de utilização.
+            </p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg">
+            <details class="p-6 cursor-pointer">
+              <summary class="flex justify-between items-center">
+                <span class="text-lg font-semibold text-[#7F5539]"
+                  >Termos e Condições</span
+                >
+                <span
+                  class="arrow text-[#B08968] text-2xl font-bold transform transition-transform duration-200"
+                  >&#x276F;</span
+                >
+              </summary>
+              <div class="mt-4 pt-4 border-t border-gray-200 text-base">
+                <ul class="space-y-4">
+                  <li>
+                    <strong>Ativação e Validade (Pacotes):</strong> A contagem
+                    da validade de cada pacote inicia-se no dia da marcação da
+                    primeira aula.
+                  </li>
+                  <li>
+                    <strong>Flexibilidade e Partilha (Pacotes):</strong> Os
+                    créditos dos pacotes são flexíveis. Pode partilhá-los com
+                    amigos ou familiares, não sendo de uso exclusivo do titular
+                    da compra.
+                  </li>
+                  <li>
+                    <strong>Marcação e Cancelamento de Aulas:</strong> As
+                    marcações devem ser realizadas através da nossa aplicação.
+                    Caso não possa comparecer, o cancelamento deve ser efetuado
+                    com um mínimo de <strong>2 horas de antecedência</strong> em
+                    relação ao início da aula.
+                  </li>
+                  <li>
+                    <strong>Não Comparência:</strong> Se o cancelamento não for
+                    efetuado dentro do prazo estipulado, a aula será
+                    automaticamente debitada do seu saldo (aula avulsa ou
+                    pacote), como forma de respeito pelo tempo do professor e
+                    pela vaga que poderia ser ocupada por outro aluno.
+                  </li>
+                  <li>
+                    <strong>Não Reembolsável:</strong> Todas as compras de aulas
+                    e pacotes, uma vez adquiridas, não são passíveis de
+                    reembolso.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </section>
 
         <a href="https://wa.me/+351933782610" target="_blank">
-          <button type="button" class="btn-custom">Fale conosco</button>
+          <button type="button" class="btn-custom">Pronto(a) para marcar a tua aula?</button>
         </a>
       </div>
     </section>
