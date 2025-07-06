@@ -604,12 +604,242 @@ hr {
     text-align: center;
 }
 
+/* Estilos para as cartas de valores em grade */
+.pack-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.pack-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid para telas grandes */
+@media screen and (min-width: 769px) {
+    .grid {
+        display: grid;
+        gap: 2rem;
+    }
+    
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .gap-8 {
+        gap: 2rem;
+    }
+    
+    .max-w-4xl {
+        max-width: 56rem;
+    }
+    
+    .max-w-6xl {
+        max-width: 72rem;
+    }
+    
+    .max-w-2xl {
+        max-width: 42rem;
+    }
+    
+    .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mb-12 {
+        margin-bottom: 3rem;
+    }
+    
+    .mb-10 {
+        margin-bottom: 2.5rem;
+        margin-top: 2.2rem;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-4xl {
+        font-size: 2.25rem;
+        font-family: "Afacad Flux", serif;
+    }
+    
+    .text-3xl {
+        font-size: 1.7rem;
+        font-family: "Afacad Flux", serif;
+    }
+    
+    .text-2xl {
+        font-size: 1.5rem;
+        font-family: "Afacad Flux", serif;
+    }
+    
+    .text-5xl {
+        font-size: 3rem;
+        font-family: "Afacad Flux", serif;
+    }
+    
+    .text-lg {
+        font-size: 1.125rem;
+    }
+    
+    .text-base {
+        font-size: 1rem;
+    }
+    
+    .text-sm {
+        font-size: 0.875rem;
+    }
+    
+    .font-bold {
+        font-weight: bold;
+    }
+    
+    .text-\[#7F5539\] {
+        color: #7F5539;
+    }
+    
+    .text-\[#5D5C61\] {
+        color: #5D5C61;
+    }
+    
+    .text-\[#B08968\] {
+        color: #B08968;
+    }
+    
+    .text-gray-500 {
+        color: #6b7280;
+    }
+    
+    .text-gray-600 {
+        color: #4b5563;
+    }
+    
+    .bg-white {
+        background-color: white;
+    }
+    
+    .bg-gray-100 {
+        background-color: #f3f4f6;
+    }
+    
+    .rounded-xl {
+        border-radius: 0.75rem;
+    }
+    
+    .rounded-lg {
+        border-radius: 0.5rem;
+    }
+    
+    .shadow-lg {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    .p-6 {
+        padding: 1.5rem;
+    }
+    
+    .p-3 {
+        padding: 0.75rem;
+    }
+    
+    .my-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mb-6 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .mt-2 {
+        margin-top: 0.5rem;
+    }
+    
+    .mt-auto {
+        margin-top: auto;
+    }
+    
+    .mr-2 {
+        margin-right: 0.5rem;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .flex-col {
+        flex-direction: column;
+    }
+    
+    .flex-grow {
+        flex-grow: 1;
+    }
+    
+    .items-center {
+        align-items: center;
+    }
+    
+    .text-left {
+        text-align: left;
+    }
+    
+    .space-y-2 > * + * {
+        margin-top: 0.5rem;
+    }
+    
+    .font-semibold {
+        font-weight: 600;
+    }
+    
+    /* Estilo para o badge "Mais Popular" */
+    .featured-monthly {
+        position: relative;
+        border: 2px solid #B08968;
+    }
+    
+    .featured-badge {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        background: #B08968;
+        color: white;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
 /* Responsividade para o botão */
 @media screen and (max-width: 768px) {
     .caixa-valores .btn-custom {
         width: 100%;
         max-width: 200px;
         margin: 0 auto;
+    }
+    
+    /* Em mobile, as cartas ficam em coluna única */
+    .grid {
+        display: block;
+    }
+    
+    .pack-card {
+        margin-bottom: 1rem;
     }
 }
 
