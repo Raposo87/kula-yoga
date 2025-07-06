@@ -777,11 +777,11 @@ footer i{
 
 /* Novo estilo para cartas de valores */
 .pack-card {
-  /* Removido transition CSS3 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .pack-card:hover {
-  /* Removido transform e box-shadow CSS3 */
-  margin-top: -8px;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Classes utilitárias para o novo layout */
@@ -827,17 +827,10 @@ margin-top: 2.20rem;}
 .bg-gray-100 { background-color: #f3f4f6; }
 .bg-\[#B08968\] { background-color: #B08968; }
 
-.rounded-xl { 
-  /* Removido border-radius CSS3 */
-}
-.rounded-lg { 
-  /* Removido border-radius CSS3 */
-}
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-lg { border-radius: 0.5rem; }
 
-.shadow-lg { 
-  /* Removido box-shadow CSS3 */
-  border: 1px solid #ddd;
-}
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
 
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
@@ -846,23 +839,12 @@ margin-top: 2.20rem;}
 .justify-center { justify-content: center; }
 .justify-between { justify-content: space-between; }
 
-.grid { 
-  /* Removido display: grid CSS3 */
-  display: block;
-}
-.grid-cols-1 { 
-  /* Removido grid-template-columns CSS3 */
-}
-.gap-8 { 
-  /* Removido gap CSS3 - usar margin nos elementos filhos */
-}
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.gap-8 { gap: 2rem; }
 
-.space-y-2 > * + * { 
-  margin-top: 0.5rem; 
-}
-.space-y-4 > * + * { 
-  margin-top: 1rem; 
-}
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
 
 .max-w-2xl { max-width: 42rem; }
 .max-w-3xl { max-width: 48rem; }
@@ -873,46 +855,24 @@ margin-top: 2.20rem;}
 
 .inline-block { display: inline-block; }
 
-.transition-colors { 
-  /* Removido transition CSS3 */
-}
-.duration-300 { 
-  /* Removido transition CSS3 */
-}
+.transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; }
+.duration-300 { transition-duration: 300ms; }
 
-.hover\:bg-\[#9C7A5A\]:hover { 
-  background-color: #9C7A5A; 
-}
+.hover\:bg-\[#9C7A5A\]:hover { background-color: #9C7A5A; }
 
 .cursor-pointer { cursor: pointer; }
 
 .border-t { border-top-width: 1px; }
 .border-gray-200 { border-color: #e5e7eb; }
 
-.transform { 
-  /* Removido transform CSS3 */
-}
-.transition-transform { 
-  /* Removido transition CSS3 */
-}
-.duration-200 { 
-  /* Removido transition CSS3 */
-}
+.transform { transform: translateZ(0); }
+.transition-transform { transition-property: transform; }
+.duration-200 { transition-duration: 200ms; }
 
 /* Responsividade */
 @media (min-width: 768px) {
-  .md\:grid-cols-2 { 
-    /* Removido grid-template-columns CSS3 */
-    display: inline-block;
-    width: 48%;
-    margin-right: 2%;
-  }
-  .md\:grid-cols-3 { 
-    /* Removido grid-template-columns CSS3 */
-    display: inline-block;
-    width: 31%;
-    margin-right: 2%;
-  }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .md\:text-5xl { font-size: 3rem; }
   .md\:text-xl { font-size: 1.25rem; }
   .md\:mb-16 { margin-bottom: 4rem; }
@@ -922,12 +882,7 @@ margin-top: 2.20rem;}
 }
 
 @media (min-width: 1024px) {
-  .lg\:grid-cols-3 { 
-    /* Removido grid-template-columns CSS3 */
-    display: inline-block;
-    width: 31%;
-    margin-right: 2%;
-  }
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
 }
 
@@ -945,19 +900,18 @@ margin-top: 2.20rem;}
   color: white;
   font-size: 0.75rem;
   padding: 0.25rem 0.75rem;
-  /* Removido border-radius CSS3 */
+  border-radius: 0.5rem;
   font-weight: bold;
-  /* Removido box-shadow CSS3 */
-  border: 1px solid #9C7A5A;
+  box-shadow: 0 2px 8px rgba(176, 137, 104, 0.3);
 }
 
 /* Estilo para o arrow nos detalhes */
 .arrow {
-  /* Removido transition CSS3 */
+  transition: transform 0.2s ease-in-out;
 }
 
 details[open] summary .arrow {
-  /* Removido transform CSS3 */
+  transform: rotate(90deg);
 }
 
 /* Container principal */
