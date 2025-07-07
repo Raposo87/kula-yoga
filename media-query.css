@@ -60,7 +60,17 @@
   .caixa-eventos img {
     width: 100%;
     padding: 10px;
-}
+  }
+  
+  .images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
   
   .mobile-menu {
     margin-top: 49px;
@@ -109,6 +119,51 @@
         height: 5rem;
       }
     
+    .eventos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .caixa-eventos {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .caixa-eventos img {
+        width: 45%;
+        max-width: 300px;
+        padding: 10px;
+    }
+    
+    .images-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .caixa-eventos .btn-custom {
+        margin: 0 auto;
+    }
+    
+    .caixa-eventos h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+        color: var(--h1);
+    }
+    
       .logo {
         margin: 0 !important;
         width: 70px !important;
@@ -154,7 +209,7 @@
   .nav-list {
     white-space: nowrap; /* Impede a quebra de linha */
     flex-wrap: nowrap; /* Garante que os itens não quebrem */
-    gap: 60px;
+    gap: 30px;
   }
   
   .social-icons {
@@ -187,5 +242,56 @@
     width: 8rem;
     margin-left: 15rem;
     top: -4%;
+  }
+}
+
+/* Telas muito grandes (acima de 1700px) */
+@media screen and (min-width: 1701px) {
+  .eventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .caixa-eventos {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .caixa-eventos img {
+    width: 45%;
+    max-width: 400px;
+    padding: 15px;
+  }
+  
+  .images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .caixa-eventos .btn-custom {
+    margin: 0 auto;
+    width: 150px;
+    padding: 12px;
+    font-size: 18px;
+  }
+  
+  .caixa-eventos h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: var(--h1);
   }
 }

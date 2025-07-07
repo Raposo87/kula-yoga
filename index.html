@@ -347,14 +347,16 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div class="caixa-eventos">
         <h2>Condições especiais</h2>
 
-        <img
-          src="Imagem WhatsApp 2025-05-16 às 17.09.53_232bf5fe.jpg"
-          alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
-        />
-        <img
-          src="Imagem WhatsApp 2025-05-16 às 17.09.53_c3f193ff.jpg"
-          alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
-        />
+        <div class="images-container">
+          <img
+            src="Imagem WhatsApp 2025-05-16 às 17.09.53_232bf5fe.jpg"
+            alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
+          />
+          <img
+            src="Imagem WhatsApp 2025-05-16 às 17.09.53_c3f193ff.jpg"
+            alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
+          />
+        </div>
 
         <a href="https://wa.me/+351933782610" target="_blank">
           <button type="button" class="btn-custom">Fale conosco</button>
@@ -651,8 +653,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <div
             id="packs-container"
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-          </div>
+          ></div>
         </section>
 
         <section id="monthly-plans" class="mb-12">
@@ -783,15 +784,21 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
         <section id="comparison" class="mb-12 md:mb-20">
           <div class="text-center mb-10">
-              <h2 class="text-3xl font-bold text-[#5D5C61]">Análise de Custo por Aula nos Packs</h2>
-              <p class="mt-2 text-md max-w-2xl mx-auto">Para o ajudar a visualizar o valor de cada opção, este gráfico compara o custo por cada aula nos diferentes packs. Quanto maior o pack, mais económica se torna a sua prática.</p>
+            <h2 class="text-3xl font-bold text-[#5D5C61]">
+              Análise de Custo por Aula nos Packs
+            </h2>
+            <p class="mt-2 text-md max-w-2xl mx-auto">
+              Para o ajudar a visualizar o valor de cada opção, este gráfico
+              compara o custo por cada aula nos diferentes packs. Quanto maior o
+              pack, mais económica se torna a sua prática.
+            </p>
           </div>
           <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-              <div class="chart-container">
-                  <canvas id="packsChart"></canvas>
-              </div>
+            <div class="chart-container">
+              <canvas id="packsChart"></canvas>
+            </div>
           </div>
-      </section>
+        </section>
 
         <section id="terms" class="max-w-4xl mx-auto mb-12">
           <div class="text-center mb-10">
@@ -806,7 +813,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <div class="bg-white rounded-xl shadow-lg">
             <details class="p-6 cursor-pointer">
               <summary class="flex justify-between items-center">
-                <span class="text-lg font-semibold text-[#7F5539]">Termos e Condições</span>
+                <span class="text-lg font-semibold text-[#7F5539]"
+                  >Termos e Condições</span
+                >
                 <span
                   class="arrow text-[#B08968] text-2xl font-bold transform transition-transform duration-200"
                   >&#x276F;</span

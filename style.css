@@ -265,6 +265,28 @@ p {
     background-image: linear-gradient(rgba(255, 255, 255, 0.926), rgba(255, 255, 255, 0.926)), url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-eventos {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.caixa-eventos h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--h1);
 }
 
 .eventos p {
@@ -282,19 +304,30 @@ p {
 }
 
 .caixa-eventos img {
-    width: 35%;
+    width: 45%;
     padding: 10px;
+    max-width: 300px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .caixa-eventos .btn-custom {
     background: var(--hover-bg);
     color: var(--hover-text);
-    margin-left: 29.5%;
     width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 /*parallax*/
