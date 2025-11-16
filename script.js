@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Lógica do Gráfico e Cards de Packs ===
     const packsData = [
         {
-            name: 'Pack Iniciação',
+            name: 'Pack 3 Aulas',
             description: 'Ideal para quem quer começar ou manter uma prática ligeira.',
             classes: 3,
             price: 35,
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: '#E1CDB5'
         },
         {
-            name: 'Pack Equilíbrio',
+            name: 'Pack 5 Aulas',
             description: 'Perfeito para integrar o yoga na sua rotina semanal.',
             classes: 5,
             price: 50,
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: '#B08968'
         },
         {
-            name: 'Pack Dedicação',
+            name: 'Pack 10 Aulas',
             description: 'A opção mais económica para quem pratica com regularidade.',
             classes: 10,
             price: 90,
