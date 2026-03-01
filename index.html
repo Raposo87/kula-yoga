@@ -263,7 +263,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <li><a href="#pratica">O nosso espaço oferece</a></li>
             <li><a href="#nosso-espaço">O nosso estúdio</a></li>
             <li><a href="#calendario">Calendário</a></li>
-            <li><a href="#terms">Termos e condições</a></li>
             <li><a href="#professoras">Quem somos</a></li>
             <li><a href="#footer">Contatos</a></li>
           </ul>
@@ -412,14 +411,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     >
       <div class="parallax-content"><strong>Bem estar</strong></div>
     </div>
-
-
-    <hr />
-
-    <!--<div class="hatha-yoga">
-      <vg-guest-booking widget-key="6800f751b5d561001835aa13" club-id="90908" lang="pt" source=""></vg-guest-booking>
-      <script src="https://static.virtuagym.com/vg-guest-booking-widget/dist/js/app.js"></script>
-    </div>-->
 
     <section
       class="nosso-espaço"
@@ -646,67 +637,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </section>
 
-        
-
-        <section id="terms" class="max-w-4xl mx-auto mb-12">
-          <div class="text-center mb-10">
-            <h3 class="text-3xl font-bold text-[#5D5C61]">
-              Como Funciona & Condições
-            </h3>
-            <p class="mt-2 text-md max-w-2xl mx-auto">
-              Para garantir uma experiência transparente e positiva para todos,
-              detalhamos abaixo as nossas condições de utilização.
-            </p>
-          </div>
-          <div class="bg-white rounded-xl shadow-lg">
-            <details class="p-6 cursor-pointer">
-              <summary class="flex justify-between items-center">
-                <span class="text-lg font-semibold text-[#7F5539]"
-                  >Termos e Condições</span
-                >
-                <span
-                  class="arrow text-[#B08968] text-2xl font-bold transform transition-transform duration-200"
-                  >&#x276F;</span
-                >
-              </summary>
-              <div class="mt-4 pt-4 border-t border-gray-200 text-base">
-                <ul class="space-y-4">
-                  <li>
-                    <strong>Ativação e Validade (Pacotes):</strong> A contagem
-                    da validade de cada pacote inicia-se no dia da marcação da
-                    primeira aula.
-                  </li>
-                  <li>
-                    <strong>Flexibilidade e Partilha (Pacotes):</strong> Os
-                    créditos dos pacotes são flexíveis. Pode partilhá-los com
-                    amigos ou familiares, não sendo de uso exclusivo do titular
-                    da compra.
-                  </li>
-                  <li>
-                    <strong>Marcação e Cancelamento de Aulas:</strong> As
-                    marcações devem ser realizadas através da nossa aplicação.
-                    Caso não possa comparecer, o cancelamento deve ser efetuado
-                    com um mínimo de <strong>2 horas de antecedência</strong> em
-                    relação ao início da aula.
-                  </li>
-                  <li>
-                    <strong>Não Comparência:</strong> Se o cancelamento não for
-                    efetuado dentro do prazo estipulado, a aula será
-                    automaticamente debitada do seu saldo (aula avulsa ou
-                    pacote), como forma de respeito pelo tempo do professor e
-                    pela vaga que poderia ser ocupada por outro aluno.
-                  </li>
-                  <li>
-                    <strong>Não Reembolsável:</strong> Todas as compras de aulas
-                    e pacotes, uma vez adquiridas, não são passíveis de
-                    reembolso.
-                  </li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </section>
-
         <a href="https://wa.me/+351933782610" target="_blank">
           <button type="button" class="btn-custom">
             Pronto(a) para marcar a tua aula?
@@ -740,6 +670,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
       </div>
     </section>
+    
 
     <footer class="footer" id="footer">
       <img
@@ -779,15 +710,36 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
         loading="lazy"
       />
-      <div class="raposo">
-        <p>Desenvolvimento:</p>
-          <img
-            src="https://res.cloudinary.com/dqn2v9mtu/image/upload/v1746108972/RAPOSO_white_1_ochd3u.png"
-            alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, quero fazer yoga, aula yoga Benfica, aula yoga, quero fazer yoga, onde fazer yoga, "
-            loading="lazy"
-        /></a>
-      </div>
+    <p class="termos-link" onclick="abrirTermos()">Termos e Condições</p>
     </footer>
+    <!-- Modal Termos e Condições -->
+<div id="modal-termos" class="modal-termos">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharTermos()">&times;</span>
+
+    <h3>Termos e Condições</h3>
+
+    <p><strong>Ativação e Validade (Pacotes):</strong> A contagem da validade de cada pacote inicia-se no dia da marcação da primeira aula.</p>
+
+    <p><strong>Flexibilidade e Partilha (Pacotes):</strong> Os créditos dos pacotes são flexíveis. Pode partilhá-los com amigos ou familiares, não sendo de uso exclusivo do titular da compra.</p>
+
+    <p><strong>Marcação e Cancelamento de Aulas:</strong> As marcações devem ser realizadas através da nossa aplicação. Caso não possa comparecer, o cancelamento deve ser efetuado com um mínimo de 2 horas de antecedência em relação ao início da aula.</p>
+
+    <p><strong>Não Comparência:</strong> Se o cancelamento não for efetuado dentro do prazo estipulado, a aula será automaticamente debitada do seu saldo (aula avulsa ou pacote).</p>
+
+    <p><strong>Não Reembolsável:</strong> Todas as compras de aulas e pacotes, uma vez adquiridas, não são passíveis de reembolso.</p>
+  </div>
+</div>
+<script>
+  function abrirTermos() {
+    document.getElementById("modal-termos").style.display = "block";
+  }
+
+  function fecharTermos() {
+    document.getElementById("modal-termos").style.display = "none";
+  }
+</script>
+
     <script src="script.js"></script>
   </body>
 </html>
