@@ -597,11 +597,7 @@ hr {
 }
 
 /* Valores */
-.valores {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.926), rgba(255, 255, 255, 0.926)), url('https://i.pinimg.com/474x/b9/ef/c1/b9efc1df3be482ccf42464d5f83f3043.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .valores p {
     display: flex;
@@ -611,6 +607,7 @@ hr {
     font-size: 20px;
     width: 100%;
     color: #883d1f;
+
 }
 
 .caixa-valores p span {
@@ -1142,7 +1139,7 @@ footer i{
 
 /* Classes utilitárias para o novo layout */
 .text-center { text-align: center; }
-.mb-12 { margin-bottom: 3rem; }
+.mb-12 { margin-bottom: 19rem; margin-top: -19rem;}
 .mb-10 { margin-bottom: 2.5rem; 
 margin-top: 2.20rem;}
 .mb-6 { margin-bottom: 1.5rem; }

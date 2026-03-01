@@ -260,6 +260,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
           <ul class="nav-list">
             <li><a href="#">Home</a></li>
+            <li><a href="https://yogakula.yogobooking.pt/frontend/index.html#/my-profile" target="_blank">Iniciar sessão</a></li>
             <li><a href="#pratica">O nosso espaço oferece</a></li>
             <li><a href="#nosso-espaço">O nosso estúdio</a></li>
             <li><a href="#calendario">Calendário</a></li>
@@ -388,19 +389,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </p>
       </div>
 
-      <a
-        class="link"
-        href="https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09"
-        onclick="return gtag_report_conversion('https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09')"
-      >
-        <button
-          class="pulse-button"
-          tabindex="0"
-          onclick="return gtag_report_conversion('https://yogakulastudio.virtuagym.com/webshop/?club=WlpHY1FiOTlldTQ5bUtrdVFmSVVSZz09')"
-        >
-          Reserva a tua aula!
-        </button>
-      </a>
+     
     </section>
 
     <div
@@ -495,8 +484,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div class="calendario-caixa">
         <h3>Horário Yoga Kula</h3>
         <img
-          src="https://i.pinimg.com/736x/5d/68/7b/5d687bca474b6ebad11f4c2165b50c3f.jpg"
-          alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
+          src=""
+          
           id="horarioImg"
           loading="lazy"
         />
@@ -519,6 +508,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <button class="zoom-button" onclick="resetZoom()">Reset</button>
         </div>
       </div>
+
+
+      <div class="yogo-calendar"></div>
+
+
+
     </section>
 
     <div
@@ -531,144 +526,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </div>
 
     <section class="valores" id="valores">
-      <div class="caixa-valores">
-        <section id="single-classes" class="mb-12">
-          <div class="text-center mb-10">
-            <h3 class="text-3xl font-bold text-[#5D5C61]">Comece por aqui</h3>
-            <p class="mt-2 text-md max-w-2xl mx-auto">
-              Ideal para a sua primeira visita ou para quem procura
-              flexibilidade total sem compromisso.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div
-              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
-            >
-              <h4 class="text-2xl font-bold text-[#B08968]">
-                Aula Experimental
-              </h4>
-              <p class="text-base my-4 flex-grow">
-                A oportunidade perfeita para conhecer o nosso estúdio, os nossos
-                professores e a nossa comunidade.
-              </p>
-              <div class="my-4">
-                <span class="text-5xl font-bold text-[#5D5C61]">10€</span>
-              </div>
-              <p class="text-sm text-gray-500">
-                Válida apenas uma vez por pessoa.
-              </p>
-            </div>
-            <div
-              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center"
-            >
-              <h4 class="text-2xl font-bold text-[#B08968]">Aula Avulsa</h4>
-              <p class="text-base my-4 flex-grow">
-                Para quem deseja praticar sem compromissos, de acordo com a sua
-                agenda e disponibilidade.
-              </p>
-              <div class="my-4">
-                <span class="text-5xl font-bold text-[#5D5C61]">15€</span>
-              </div>
-              <p class="text-sm text-gray-500">
-                Compre e marque sempre que quiser.
-              </p>
-            </div>
-          </div>
+
+    
         </section>
 
         <section id="packs" class="mb-12">
           <div class="text-center mb-10">
-            <h3 class="text-3xl font-bold text-[#5D5C61]">Pacotes de Aulas</h3>
+            <h3 class="text-3xl font-bold text-[#5D5C61]">Pacotes de Aulas e Mensalidade</h3>
             <p class="mt-2 text-md max-w-2xl mx-auto">
               Poupe com os nossos pacotes e integre o Yoga na sua rotina. Todos
               os pacotes permitem partilhar as suas aulas com amigos e
               familiares.
             </p>
           </div>
-          <div
-            id="packs-container"
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          ></div>
-        </section>
-
-        <section id="monthly-plans" class="mb-12">
-          <div class="text-center mb-10">
-            <h3 class="text-3xl font-bold text-[#5D5C61]">Mensalidades</h3>
-            <p class="mt-2 text-md max-w-2xl mx-auto">
-              Para quem quer integrar o Yoga na sua rotina diária com benefícios
-              exclusivos.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          
-            <div
-              class="pack-card bg-white rounded-xl shadow-lg p-6 flex flex-col text-center featured-monthly"
-            >
-              <div class="featured-badge">Mais Popular</div>
-              <h4 class="text-2xl font-bold text-[#7F5539]">
-                Mensalidade Kula
-              </h4>
-              <p class="text-base my-4 flex-grow">
-                Acesso ilimitado às aulas + benefícios exclusivos
-              </p>
-              <div class="my-4">
-                <span class="text-5xl font-bold text-[#5D5C61]">45€</span>
-              </div>
-              <ul class="text-left space-y-2 text-base mx-auto mb-6">
-                <li class="flex items-center">
-                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
-                  Aulas ilimitadas
-                </li>
-                <li class="flex items-center">
-                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
-                  Aulas gravadas
-                </li>
-                <li class="flex items-center">
-                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
-                  Descontos em workshops
-                </li>
-                <li class="flex items-center">
-                  <span class="mr-2 text-xl text-[#7F5539]">&#10003;</span>
-                  Eventos especiais
-                </li>
-              </ul>
-            </div>
-            
+          <div class="yogo-prices"
+            data-show-prices-dropdown="true"
+            data-show-prices-all-option="true">
           </div>
         </section>
 
-        <a href="https://wa.me/+351933782610" target="_blank">
-          <button type="button" class="btn-custom">
-            Pronto(a) para marcar a tua aula?
-          </button>
-        </a>
-      </div>
-    </section>
 
     <section class="professoras" id="professoras">
       <h2>Quem somos</h2>
 
-      <div class="professoras-caixa">
-        <div class="professora-1">
-          <img
-            src="https://i.pinimg.com/736x/b0/0b/ad/b00bad8e75431b661defe311b1010ea6.jpg"
-            alt="Aula de Yoga no estúdio Yoga Kula em Lisboa, aula yoga, quero fazer yoga, onde fazer yoga,"
-            loading="lazy"
-          />
-          <h3>Joana Chumbinho e Susy Santos</h3>
-          <p>
-            Somos a Joana Chumbinho e a Susy Santos, professoras de Yoga
-            apaixonadas por esta prática milenar. O Yoga é a nossa jornada, um
-            caminho de autoconhecimento, presença e conexão que vivemos e
-            partilhamos com profundo respeito pela sua tradição. Criamos este
-            estúdio para oferecer um espaço autêntico, onde cada pessoa pode
-            explorar o Yoga para além do físico, encontrando equilíbrio e
-            verdade dentro de si. Com amor e dedicação, guiamos cada prática
-            como um convite ao reencontro com a essência. Será uma alegria
-            caminhar contigo nesta jornada!
-          </p>
-        </div>
-      </div>
+      <div class="yogo-teachers"></div>
+
     </section>
     
 
@@ -741,5 +623,46 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 </script>
 
     <script src="script.js"></script>
+
+    <!-- YOGO Widgets -->
+<script>
+  var YOGO_CONVERT_TEXT_TAGS_TO_HTML = true;
+  var YOGO_PARSE_HTML_CONTINUOUSLY = true;
+  var YOGO_APP_SERVER = 'yogakula.yogobooking.pt';
+
+  !function(){
+    var i = "https://" + YOGO_APP_SERVER + "/widgets/",
+        l = new XMLHttpRequest;
+
+    l.onloadend = function(){
+      if (200 <= l.status && l.status < 300) {
+        var e = JSON.parse(l.responseText),
+            t = e.css,
+            s = e.js;
+
+        for (var r = 0; r < t.length; r++) {
+          var n = document.createElement("link");
+          n.rel = "stylesheet";
+          n.type = "text/css";
+          n.href = i + t[r];
+          document.head.appendChild(n);
+        }
+
+        for (var a = 0; a < s.length; a++) {
+          var o = document.createElement("script");
+          o.type = "text/javascript";
+          o.src = i + s[a];
+          document.head.appendChild(o);
+        }
+      } else {
+        console.error("YOGO: Failed to get widget file list.");
+      }
+    };
+
+    l.open("GET", i + "filelist.json?cachebuster=" + Date.now());
+    l.send();
+  }();
+</script>
+
   </body>
 </html>
